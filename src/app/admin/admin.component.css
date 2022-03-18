@@ -55,13 +55,21 @@ button{
 .rej{
     position: relative;
     left: 10%;
-    background: rgb(85, 85, 241);
+    background: rgb(4, 4, 121);
     color: white;
 }
 .view{
     position: relative;
     left: 25%;
     cursor: pointer;
+}
+.btn{
+    position: absolute;
+    left: 70%;
+    width: 120px;
+    height: 40px;
+    color: white;
+    background: rgb(4, 4, 121);
 }
 
 

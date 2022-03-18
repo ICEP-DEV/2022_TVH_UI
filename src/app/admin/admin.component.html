@@ -11,9 +11,9 @@
   <h1>Admin Portal</h1>
   <div class="container">
           <div class="title">
-              <h2>Applicants List</h2>
+              <h2>Applicants List</h2><button (click)="exportTableToExcel()" class="btn" >Export to excel</button>
           </div>
-              <table width="100px" border ="1px">
+              <table id="app-table" width="100px" border ="1px">
                 <tr>
                   <th>No</th>
                   <th>Name</th>
@@ -22,197 +22,13 @@
                   <th>Status</th>
                   <th>Action</th>
                 </tr>
-                <tr>
-                  <td>1.</td>
-                  <td>Nhlakanipho</td>
-                  <td>Makhaza</td>
-                  <td>nhlakanipho19sphelele@gmail.com</td>
+                <tr *ngFor="let list of data">
+                  <td >{{list.no}}</td>
+                  <td>{{list.name}}</td>
+                  <td>{{list.surname}}</td>
+                  <td>{{list.email}}</td>
                   <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>2.</td>
-                  <td>Nicolas</td>
-                  <td>Chauke</td>
-                  <td>nicolaschauke44@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>3.</td>
-                  <td>Richard</td>
-                  <td>Sthole</td>
-                  <td>richardsthole_56@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>4.</td>
-                  <td>Zandile</td>
-                  <td>Ngcobo</td>
-                  <td>zandile_ngcobo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>5.</td>
-                  <td>Sbongile</td>
-                  <td>Zondo</td>
-                  <td>sbo76zondo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>6.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>7.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>8.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>9.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>10.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>11.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>12.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>13.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>14.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>15.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>16.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>17.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>18.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>19.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>20.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>21.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>22.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>23.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
-                </tr>
-                <tr>
-                  <td>24.</td>
-                  <td>Tumelo</td>
-                  <td>Tsotetsi</td>
-                  <td>tsotetsitumelo@gmail.com</td>
-                  <td></td>
-                  <td><button class="acc">Accept</button ><button class="rej">Reject</button> <a class="view" href="#">View</a> </td>
+                  <td><button (click)="getStatus()" class="acc" >Accept</button ><button (click)="getStatusRej()" class="rej" >Reject</button> <a class="view" href="#">View</a> </td>
                 </tr>
               </table>
    
