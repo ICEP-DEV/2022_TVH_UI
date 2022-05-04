@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login-form',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginFormComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit(): void {
   }
+  ngOnInit(): void {
+
+  }
+  title ='sweetalert2';
+  alertWithSuccess(){
+    Swal.fire("Thank you... ", 'Your application was successfully submitted ','success')
+  }
+
 
 }

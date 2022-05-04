@@ -23,6 +23,7 @@ import { PublicAnnoucementComponent } from './public-annoucement/public-annoucem
 
 
 
+
 const routes: Routes = [
 
   {path: "",component:HomeComponent},
