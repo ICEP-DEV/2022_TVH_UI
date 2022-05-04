@@ -1,0 +1,46 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.table{
+    border-collapse: collapse;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    margin-top: 1px;
+}
+.table thead tr th{
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+}
+.table thead th,
+.table tbody td{
+    padding: 3px 3px; 
+}
+.detail-header label{
+    font-size: 25px;
+}
+.btn_accept{
+    right: 5px;
+}
+.btn_reject{
+    left: 5px;
+}
+.la-file-excel{
+    font-size: 25px;
+}
+.mat-card{
+    left: 11%;
+    margin-top: 10px;
+    width: 89%;
+}
+.btn_excel{
+    left: 82%;
+    margin-bottom: 20px;
+}
