@@ -1,8 +1,10 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
 
-@media (min-width:1366px){
-  *{
-    margin: 0;
+   @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
+@media (min-width:1920){
+
+}
+@media (max-device-width : 1370px){
+  *{ margin: 0;
     padding: 0;
   }
   .nav-links{

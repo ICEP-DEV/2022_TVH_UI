@@ -15,101 +15,91 @@
 
           <div class="nav-links">
             <a href="home"><img src="../assets/tut-logo.png"></a>
-             <h1>Tshwane Varsity Hackathon 2022</h1>
+             <h1>Tshwane varsity hackathon 2022</h1>
             <ul>
-              <li><a href="home">Home</a></li>
-              <li><a href="onboarding">Onboarding</a></li>
-              <li><a href="about">About</a></li>
-              <li><a href="announcements">Announcements</a></li>
-               <button type="submit" class="registerbtn">Register</button>
-
+              <li><a href="">Home</a></li>
+              <li><a href="rewards">About</a></li>
+              <li><a href="about">Rules</a></li>
+              <li><a href="public-annoucement">Announcements</a></li>
+              <li><a href="home">Gallery</a></li>
+              <li><a href="rewards">Rewards</a></li>
+              <li><a href="team">Team</a></li>
 
             </ul>
+
           </div>
         </nav>
       </section>
 
     <div class="container">
-      <div class="reg-form">
-          <form action="">
-
-              <div class="heading">
-                  <h2>Hacker Registration </h2>
-              </div><br>
-
-                <h2 class="name">Name</h2>
-                 <input class="firstname" type="text" placeholder="Name" name="first_name"><br>
-
-                 <div id="surname">
-                  <h2 class="surname">Surname</h2>
-                   <input class="lastname" type="text" placeholder="Surname" name="last_name"><br>
-               </div>
-
-                <h2 class="age">Age</h2>
-                 <input class="years" type="text" placeholder="age" name="age"><br>
-
-
-              <div class="gen-date">
-                <h2 class="name">Gender</h2>
-                <select class="the-gender">
-                    <option value="choose">Choose Option</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-              </div>
-
-              <h2 class="studentnum">Student Number</h2>
-              <input type="text" class="student-number" placeholder="Enter your student number" required>
-
-              <h2 class="email-add">Email</h2>
-              <input type="text" class="email" placeholder="Enter your email" required>
-
-              <h2 class="cellphone">Cellphone Number</h2>
-              <input type="text" class="number" placeholder="Enter your cellphone number" required>
-
-              <h2 class="name">Faculty</h2>
-              <select class="your-insti">
-                  <option value="choose">Choose Option</option>
-                  <option value="tut"> Faculty Of Information And Communication Technology</option>
-                  <option value="up">Faculty Of Management Sciences</option>
-                  <option value="smu">Faculty Of Arts And Design</option>
-              </select>
-
-              <h2 class="special">Specialization</h2>
-              <input type="text" class="specialization" placeholder="Enter your specialization" required>
-
-              <h2 class="name">Level</h2>
-              <select class="your-insti">
-                  <option value="choose">Choose Option</option>
-                  <option >First Year</option>
-                  <option >Second Year</option>
-                  <option >Final Year</option>
-              </select>
-
-
-              <h2 class="name">Campus</h2>
-              <select class="your-insti">
-                  <option value="choose">Choose Option</option>
-                  <option value="sos">Soshanguve Campus</option>
-                  <option value="ema">Emalahleni Campus</option>
-                  <option value="pre">Pretoria Campus</option>
-                  <option value="art">Art Campus</option>
-                  <option value="plk">Polokwane Campus</option>
-              </select>
-
-              <h2 class="name">Role</h2>
-              <select class="your-insti">
-                  <option value="choose">Choose Option</option>
-                  <option >Analyst</option>
-                  <option >Frontend Developer</option>
-                  <option >Backend Developer</option>
-                  <option >Graphic designer</option>
-                  <option >Marketer</option>
-              </select>
-
-
-          </form>
+    <form action="">
+      <div class="name-surname">
+        <input type="text" placeholder="Full Names">
+        <input type="text" placeholder="Surname">
       </div>
-  </div>
+      <div class="theAge">
+        <input type="text" placeholder="Age">
+      </div>
+      <br>
+      <br>
+      <select class="the-gender">
+        <option value="choose">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br>
+      <input type="text" placeholder="Student Number">
+      <br>
+      <input type="text" placeholder="Email">
+      <input type="text" placeholder="Cell Number">
+      <br>
+      <br>
+      <br>
+      <select class="your-insti">
+        <option value="choose">Faculty</option>
+        <option value="tut"> Faculty Of Information And Communication Technology</option>
+        <option value="up">Faculty Of Management Sciences</option>
+        <option value="smu">Faculty Of Arts And Design</option>
+    </select>
+    <br>
+    <input type="text" placeholder="Specialisation">
+    <br>
+    <br>
+    <br>
+    <select class="your-insti">
+      <option value="choose">Level</option>
+      <option >First Year</option>
+      <option >Second Year</option>
+      <option >Final Year</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <select class="your-insti">
+    <option value="choose">Campus</option>
+    <option value="sos">Soshanguve Campus</option>
+    <option value="ema">Emalahleni Campus</option>
+    <option value="pre">Pretoria Campus</option>
+    <option value="art">Art Campus</option>
+    <option value="plk">Polokwane Campus</option>
+</select>
+<br>
+<br>
+<br>
+<select class="your-insti">
+  <option value="choose">Role</option>
+  <option >Analyst</option>
+  <option >Frontend Developer</option>
+  <option >Backend Developer</option>
+  <option >Graphic designer</option>
+  <option >Marketer</option>
+</select>
+<br>
+<br>
+ <button (click) ="alertWithSuccess()" class="btn" type="submit">Submit</button>
+    </form>
+
+    </div>
+    <app-footer></app-footer>
 </body>
 </html>
