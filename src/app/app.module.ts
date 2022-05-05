@@ -25,6 +25,7 @@ import { PublicAnnoucementComponent } from './public-annoucement/public-annoucem
 import { LayoutComponent } from './layout/layout.component';
 import { TeamComponent } from './team/team.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -71,9 +72,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     SidebarComponent,
     PublicAnnoucementComponent,
     TeamComponent,
-    DialogComponent
+    DialogComponent,
+    LogoutComponent
 
   ],
+  entryComponents:[DialogComponent, LogoutComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
