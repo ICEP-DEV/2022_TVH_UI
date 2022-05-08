@@ -32,6 +32,9 @@ import { FormsModule } from '@angular/forms';
 import { CKEditorModule } from 'ng2-ckeditor';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
 import { FooterComponent } from './footer/footer.component';
+import { PublicTeamsComponent } from './public-teams/public-teams.component';
+
+
 
 
 @NgModule({
@@ -53,6 +56,7 @@ import { FooterComponent } from './footer/footer.component';
     SidebarComponent,
     PublicAnnoucementComponent,
     FooterComponent,
+    PublicTeamsComponent,
 
 
 

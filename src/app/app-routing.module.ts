@@ -14,6 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RewardComponent } from './reward/reward.component';
 import { AnnoucementComponent } from './annoucement/annoucement.component';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
+import { PublicTeamsComponent } from './public-teams/public-teams.component';
 
 
 
@@ -39,7 +40,8 @@ const routes: Routes = [
   {path: "dashboard", component:DashboardComponent},
   {path: "reward", component:RewardComponent},
   {path: "annoucement", component:AnnoucementComponent},
-  {path: "public-annoucement", component:PublicAnnoucementComponent}
+  {path: "public-annoucement", component:PublicAnnoucementComponent},
+  {path: "public-teams", component:PublicTeamsComponent},
 
 
 ];
