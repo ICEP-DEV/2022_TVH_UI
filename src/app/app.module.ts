@@ -18,7 +18,6 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ParticipantComponent } from './participant/participant.component';
 import { AnnoucementComponent } from './annoucement/annoucement.component';
-import { RewardComponent } from './reward/reward.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
@@ -35,7 +34,6 @@ import { MatCommonModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -48,6 +46,9 @@ import { AngularFileUploaderModule } from "angular-file-uploader";
 import { CKEditorModule } from 'ng2-ckeditor';
 import { A11yModule } from '@angular/cdk/a11y';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { FooterComponent } from './footer/footer.component';
+
 
 
 
@@ -68,15 +69,14 @@ import { MatDialogModule } from '@angular/material/dialog';
     ParticipantComponent,
     AnnoucementComponent,
     DashboardComponent,
-    RewardComponent,
     SidebarComponent,
     PublicAnnoucementComponent,
     TeamComponent,
     DialogComponent,
-    LogoutComponent
+    LogoutComponent,
+    FooterComponent
 
   ],
-  entryComponents:[DialogComponent, LogoutComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -91,7 +91,6 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatSelectModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatIconModule,
     MatListModule,
     MatGridListModule,
     MatCardModule,
@@ -103,7 +102,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatChipsModule,
     CKEditorModule,
     A11yModule,
-    MatDialogModule
+    MatDialogModule,
+    MatIconModule
 
   ],
   providers: [

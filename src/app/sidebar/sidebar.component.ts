@@ -21,10 +21,11 @@ export class SidebarComponent {
   constructor(private breakpointObserver: BreakpointObserver, private dialog: MatDialog) {}
 
 
-  openDialog() {
-    let dialogRef = this.dialog.open(LogoutComponent, {
-        width:'300px'
-    })
+  openDialog(): void {
+    const dialogRef = this.dialog.open(LogoutComponent, {});
+    dialogRef.afterClosed().subscribe(res => {
+      console.log(res);
+    });
   }
 
 

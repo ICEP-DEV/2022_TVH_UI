@@ -2,6 +2,8 @@
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
 }
-mat-dialog-conten{
-font-size: 25px;
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }

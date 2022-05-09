@@ -5,12 +5,21 @@
   <title>Admin logout</title>
 </head>
 <body>
-   <mat-dialog-content>
-     <p>Are you sure wanna logout?</p>
-   </mat-dialog-content>
-   <mat-card-actions>
-     <button mat-raised-button mat-dialog-close color="primary">No</button>
-     <button mat-raised-button mat-dialog-close color="primary">Yes</button>
-   </mat-card-actions>
+   <div class="header">
+     <h1 mat-dialog-title>Confirm Action</h1>
+      <button mat-icon-button>
+        <mat-icon>time</mat-icon>
+      </button>
+   </div>
+
+   <div mat-dialog-content>
+     <p>Are you sure you want to logout?</p>
+   </div>
+
+   <div mat-dialog-actions [align]="'end'">
+     <button mat-raised-button [mat-dialog-close]="false">No</button>
+     <button mat-raised-button mat-dialog-close color="primary" [mat-dialog-close]="true">Yes</button>
+   </div>
+
   </body>
 </html>
