@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-public-teams',
-  templateUrl: './public-teams.component.html',
-  styleUrls: ['./public-teams.component.css']
+  selector: 'app-rules',
+  templateUrl: './rules.component.html',
+  styleUrls: ['./rules.component.css']
 })
-export class PublicTeamsComponent implements OnInit {
+export class RulesComponent implements OnInit {
 
   constructor() { }
 

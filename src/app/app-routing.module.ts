@@ -15,6 +15,8 @@ import { RewardComponent } from './reward/reward.component';
 import { AnnoucementComponent } from './annoucement/annoucement.component';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
 import { PublicTeamsComponent } from './public-teams/public-teams.component';
+import { PublicGalleryComponent } from './public-gallery/public-gallery.component';
+import { RulesComponent } from './rules/rules.component';
 
 
 
@@ -42,6 +44,8 @@ const routes: Routes = [
   {path: "annoucement", component:AnnoucementComponent},
   {path: "public-annoucement", component:PublicAnnoucementComponent},
   {path: "public-teams", component:PublicTeamsComponent},
+  {path: "public-gallery", component:PublicGalleryComponent},
+  {path: "rules", component:RulesComponent},
 
 
 ];

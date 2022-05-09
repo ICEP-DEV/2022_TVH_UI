@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-public-teams',
-  templateUrl: './public-teams.component.html',
-  styleUrls: ['./public-teams.component.css']
+  selector: 'app-public-gallery',
+  templateUrl: './public-gallery.component.html',
+  styleUrls: ['./public-gallery.component.css']
 })
-export class PublicTeamsComponent implements OnInit {
+export class PublicGalleryComponent implements OnInit {
 
   constructor() { }
-
   showMe:boolean = true
 
   ngOnInit(): void {
@@ -18,5 +17,4 @@ export class PublicTeamsComponent implements OnInit {
   {
     this.showMe=!this.showMe
   }
-
 }

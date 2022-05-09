@@ -57,21 +57,21 @@ nav img{
     padding: 8px 12px;
     transition: all .5s ease;
     font-size: 19px;
-    
+
 }
 .nav-links ul li a:hover{
     background-color: #003782;
     border-radius: 3px;
     color: #fff;
-
 }
-body{
+.theMain{
   width: 100%;
   height: 400vh;
-  background:linear-gradient(to right,#00265ce8 0%,#00265ce8 100%),url(slider.jpg);
+  background:linear-gradient(to right,#00265cb7 0%,#00265cb7 100%),url(slider.jpg);
   background-position: center;
   background-size: cover;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 25px;
 }
 
 .grid-item img{
@@ -85,7 +85,8 @@ font-size: 3em;
 font-weight: 600;
 color: #e6b012;
 font-family: Arial, Helvetica, sans-serif;
-padding-left: 30rem;
+padding: 10px;
+text-align: center;
 }
 h5{
 font-size: 3em;
@@ -93,6 +94,7 @@ font-weight: 600;
 color: #e6b012;
 font-family: Arial, Helvetica, sans-serif;
 text-align: center;
+padding: 10px;
 }
 h3{
 color: #fff ;

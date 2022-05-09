@@ -4,34 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>TVH Webpage</title>
 </head>
 <body>
   <section class="menu">
-    <nav class="thenav">
+    <nav class="thenav" >
 
-      <div class="nav-links">
+      <div class="nav-links"*ngIf="showMe">
+
         <a href=""><img src="../assets/tut-logo.png"></a>
          <h1>Tshwane varsity hackathon 2022</h1>
-        <ul>
+        <ul >
           <li><a href="">Home</a></li>
-          <li><a href="rewards">About</a></li>
-          <li><a href="about">Rules</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="rules">Rules</a></li>
           <li><a href="public-annoucement">Announcements</a></li>
-          <li><a href="home">Gallery</a></li>
+          <li><a href="public-gallery">Gallery</a></li>
           <li><a href="rewards">Rewards</a></li>
           <li><a href="public-teams">Team</a></li>
 
         </ul>
 
       </div>
-
-
+      <i class="las la-bars" (click)="theMenu()"></i>
     </nav>
+
   </section>
 
-      <section>
-        <div class="container1">
+      <section class="theMain">
+        <div class="container">
           <h2>Lead Organizing Team</h2>
             <div class="search-container">
                 <div class="grid-item">

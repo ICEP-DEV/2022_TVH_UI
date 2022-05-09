@@ -9,7 +9,13 @@ export class RewardsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  showMe:boolean = true
 
+  ngOnInit(): void {
+
+  }
+  theMenu()
+  {
+    this.showMe=!this.showMe
+  }
 }

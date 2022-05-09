@@ -33,6 +33,8 @@ import { CKEditorModule } from 'ng2-ckeditor';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
 import { FooterComponent } from './footer/footer.component';
 import { PublicTeamsComponent } from './public-teams/public-teams.component';
+import { PublicGalleryComponent } from './public-gallery/public-gallery.component';
+import { RulesComponent } from './rules/rules.component';
 
 
 
@@ -57,6 +59,8 @@ import { PublicTeamsComponent } from './public-teams/public-teams.component';
     PublicAnnoucementComponent,
     FooterComponent,
     PublicTeamsComponent,
+    PublicGalleryComponent,
+    RulesComponent,
 
 
 
