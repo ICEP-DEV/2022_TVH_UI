@@ -21,16 +21,16 @@
 }
 .table thead th,
 .table tbody td{
-    padding: 3px 3px; 
+    padding: 5px 1px; 
 }
 .detail-header label{
     font-size: 25px;
 }
 .btn_accept{
-    right: 5px;
+    right: 3px;
 }
 .btn_reject{
-    left: 5px;
+    left: 3px;
 }
 .la-file-excel{
     font-size: 25px;
