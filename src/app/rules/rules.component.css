@@ -256,4 +256,46 @@ nav img{
 
 }
 
+.container1
+{
+    width: 80;
+    margin: auto 0;
+    padding-top: 5em;
+
+
+}
+
+
+
+.w3-container{
+
+ width: 75%;
+ color : #003782;
+ margin: 15px ;
+ padding: 10px;
+ height: 120px;
+
+
+
+}
+
+p{
+
+ color:#000;
+ font-size: 15px;
+
+}
+ul
+{
+    list-style-type:disc;
+    color:#000;
+    padding-left: 2rem;
+}
+h2{
+    font-family: Arial;
+    color: #003782;
+    font-weight: bold;
+}
+
+
 }
