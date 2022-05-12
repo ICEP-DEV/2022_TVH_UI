@@ -1,8 +1,113 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
-@media (min-width:1920){
+@media only screen and (max-width: 600px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+nav img{
+  width: 35px;
+  margin-left: -80px;
+  margin-top: 2px;
+}
+
+.nav-links ul li{
+  display: block;
+  padding: 5px;
 
 }
-@media (max-device-width : 1370px){
+.nav-links{
+  position: absolute;
+  background: #003782;
+  color:#fff;
+  height: 70vh;
+  width: 200px;
+  top:0;
+  right: 0;
+  text-align: left;
+  z-index: 2;
+}
+.nav-links
+{
+  display: none;
+}
+
+nav .las{
+  display: block;
+  color: #e6b012;
+  margin: 10px;
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-links h1{
+
+  color: #003782;
+  margin-top: -47px;
+  position: relative;
+  left: -22%;
+  font-weight: bold;
+  font-size: 13px;
+}
+.nav-links ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 8px 12px;
+
+}
+.container{
+  width: 100%;
+  height: 170vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  display:block;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 70%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 12%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 30px;
+  width: 75%;
+  font-size: 15px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+}
+@media only screen and (min-width: 600px) {
   *{ margin: 0;
     padding: 0;
   }
@@ -24,6 +129,11 @@ nav img{
     display: flex;
     list-style: none;
     margin: 20px 0px;
+}
+h2{
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
 }
 .nav-links ul li{
     font-family: Arial;
@@ -50,32 +160,86 @@ nav img{
     color: #fff;
 
 }
+
+}
+@media only screen and (min-width: 768px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .nav-links{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+
+}
+nav img{
+  width: 60px;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: 2%;
+
+}
+.nav-links h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  left: 1%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+    font-size: 13px;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
 .container{
   width: 100%;
-  height: 130vh;
-}
-.container input{
+  height: 160vh;
+  }
+  .container input{
   width: 30%;
   margin-left: 40px;
   margin-top: 40px;
-}
-.container input[type="text"]
-{
+  }
+  .container input[type="text"]
+  {
   border: 1px solid #000;
   width: 30%;
   border-radius: 5px;
   padding: 5px;
   font-size: 18px;
-}
-.theAge input[type="text"]
-{
+  }
+  .theAge input[type="text"]
+  {
   border: 1px solid #000;
   width: 6%;
   border-radius: 5px;
   padding: 5px;
   font-size: 18px;
-}
-select{
+  }
+  select{
   padding-top: 5px;
   border-radius: 5px;
   border: 1px solid #000;
@@ -83,8 +247,8 @@ select{
   width: 31%;
   font-size: 18px;
   margin-left: 40px;
-}
-.btn{
+  }
+  .btn{
   background-color: #003782;
   color: #fff;
   font-size: 18px;
@@ -94,10 +258,221 @@ select{
   height: 40px;
   margin-left: 40px;
 
-}
-.btn:hover{
+  }
+  .btn:hover{
   background-color: #002252;
   cursor: pointer;
-}
+  }
+  .las{
+    display: none;
+  }
 
 }
+@media only screen and (min-width: 992px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .nav-links{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+nav img{
+  width: 70px;
+  margin-left: -140px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -28%;
+
+}
+.nav-links h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  left: -6%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+.container{
+  width: 100%;
+  height: 130vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 6%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 35px;
+  width: 31%;
+  font-size: 18px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+  .las{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .nav-links{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+nav img{
+  width: 72px;
+  margin-left: -170px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -25%;
+
+}
+.nav-links h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  left: -6%;
+  font-size: 24px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+    font-size: 19px;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+.container{
+  width: 100%;
+  height: 130vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 6%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 35px;
+  width: 31%;
+  font-size: 18px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+  .las{
+    display: none;
+  }
+}
+
+
+

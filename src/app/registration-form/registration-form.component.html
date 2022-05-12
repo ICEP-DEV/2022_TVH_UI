@@ -11,23 +11,25 @@
  </head>
     <body>
       <section class="menu">
-        <nav class="thenav">
+        <nav class="thenav" >
 
-          <div class="nav-links">
-            <a href="home"><img src="../assets/tut-logo.png"></a>
+          <div class="nav-links"*ngIf="showMe">
+
+            <a href=""><img src="../assets/tut-logo.png"></a>
              <h1>Tshwane varsity hackathon 2022</h1>
-            <ul>
+            <ul >
               <li><a href="">Home</a></li>
-              <li><a href="rewards">About</a></li>
-              <li><a href="about">Rules</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="rules">Rules</a></li>
               <li><a href="public-annoucement">Announcements</a></li>
-              <li><a href="home">Gallery</a></li>
+              <li><a href="public-gallery">Gallery</a></li>
               <li><a href="rewards">Rewards</a></li>
-              <li><a href="team">Team</a></li>
+              <li><a href="public-teams">Team</a></li>
 
             </ul>
 
           </div>
+          <i class="las la-bars" (click)="theMenu()"></i>
         </nav>
       </section>
 
