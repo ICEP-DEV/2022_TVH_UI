@@ -1,14 +1,11 @@
-
 .sidenav {
   width: 200px;
   background: #013b92;
 }
-
 .sidenav .mat-toolbar {
   background: inherit;
   color:#fff;
 }
-
 .mat-toolbar.mat-primary {
   position: sticky;
   height: 11vh;
@@ -30,7 +27,6 @@ a .active{
  font-size: 15px;
  box-shadow: 0 0 7px #001a41,0 0 7px #001a41;
 }
-
 h1{
   margin: 50px;
 }
@@ -55,15 +51,15 @@ img{
 span .mat-icon{
   font-size: 55px;
   position: absolute;
-  right: 15%;
+  right: 12%;
   top: 21%;
 }
 .btn{
-  color: #000;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 600;
   background: #fff;
   position: absolute;
-  right: 5%;
+  right: 3%;
   outline: none;
   border: none;
   padding-top: 5px;

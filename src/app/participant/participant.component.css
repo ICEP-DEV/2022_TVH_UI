@@ -25,6 +25,7 @@
 }
 .detail-header label{
     font-size: 25px;
+    font-weight: 100;
 }
 .btn_accept{
     right: 3px;
@@ -32,8 +33,10 @@
 .btn_reject{
     left: 3px;
 }
-.la-file-excel{
+.la-file-download{
     font-size: 25px;
+    padding-right: 7px;
+    font-weight: bolder;
 }
 .mat-card{
     left: 11%;
@@ -42,6 +45,7 @@
     height: 100%;
 }
 .btn_excel{
-    left: 82%;
+    left: 80%;
     margin-bottom: 20px;
+    font-size: 15px;
 }
