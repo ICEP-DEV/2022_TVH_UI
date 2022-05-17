@@ -1,6 +1,10 @@
+.sidenav-container{
+  overflow: hidden;
+}
 .sidenav {
   width: 200px;
   background: #013b92;
+  overflow: hidden;
 }
 .sidenav .mat-toolbar {
   background: inherit;

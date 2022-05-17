@@ -48,6 +48,7 @@ import { A11yModule } from '@angular/cdk/a11y';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './footer/footer.component';
+import { PublicRewardsComponent } from './public-rewards/public-rewards.component';
 
 
 
@@ -74,7 +75,8 @@ import { FooterComponent } from './footer/footer.component';
     TeamComponent,
     DialogComponent,
     LogoutComponent,
-    FooterComponent
+    FooterComponent,
+    PublicRewardsComponent
 
   ],
   imports: [

@@ -1,3 +1,9 @@
+
+*{
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+}
 .theMain{
   height: 135vh;
   width: 100%;
@@ -22,20 +28,17 @@ button:hover{
  box-shadow: 0 0 7px #ff0000,0 0 7px #ff0000;
 }
 .mat-card-header{
-
     background-color: #013b92;
     color: white;
     justify-content: center;
     width: 100%;
 }
-form{
-  width: 100%;
-}
+
 .mat-card{
-  width: 70%;
+  width: 87%;
   height: 60%;
   position: relative;
-  top: 10%;
-  left: 20%;
+  top: 0.5%;
+  left: 11%;
 }
 

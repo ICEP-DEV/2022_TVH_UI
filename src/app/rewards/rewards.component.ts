@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 
 @Component({
   selector: 'app-rewards',
@@ -7,16 +9,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RewardsComponent implements OnInit {
 
-  constructor() { }
-  showMe:boolean = true
+  editMode: boolean = false;
+  private postId: string | undefined;
+
+  constructor(public route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe((paramMap: ParamMap) => {
+      if (paramMap.has('id')) { // the id passed in paramMap.has('id') has to be same as it define in routing module.
+        this.editMode = true;
 
+      } else {
+        this.editMode = false;
+      }
+    });
   }
-  theMenu()
-  {
-    this.showMe=!this.showMe
+
+  ckeditorContent:any;
+
+
+
+  savePost(form: NgForm) {
+    if (form.invalid) {
+      return;
+    } else {
+      if (this.editMode) {
+        const post = {
+          _id: this.postId,
+          title: form.value.title,
+          body: form.value.body,
+        }
+      } else {
+        const post = {
+          title: form.value.title,
+          body: form.value.body
+        }
+      }
+      this.router.navigate(['/']);
+    }
   }
+
 
 
 }

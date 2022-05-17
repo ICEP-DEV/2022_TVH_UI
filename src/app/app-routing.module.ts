@@ -16,6 +16,7 @@ import { AnnoucementComponent } from './annoucement/annoucement.component';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
 import { TeamComponent } from './team/team.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { PublicRewardsComponent } from './public-rewards/public-rewards.component'
 
 
 
@@ -42,8 +43,7 @@ const routes: Routes = [
   {path: "public-annoucement", component:PublicAnnoucementComponent},
   {path: "team", component:TeamComponent},
   {path: "dialog", component:DialogComponent},
-
-
+  {path: "public-rewards", component: PublicRewardsComponent}
 ];
 
 @NgModule({
