@@ -6,7 +6,6 @@ import { RewardsComponent } from './rewards/rewards.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -16,18 +15,12 @@ import { AnnoucementComponent } from './annoucement/annoucement.component';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
 import { TeamComponent } from './team/team.component';
 import { DialogComponent } from './dialog/dialog.component';
-import { PublicRewardsComponent } from './public-rewards/public-rewards.component'
-
-
-
-
-
-
-
+import { PublicRewardsComponent } from './public-rewards/public-rewards.component';
+import { RulesComponent } from './rules/rules.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
 
 
 const routes: Routes = [
-  {path: "",component:LandingPageComponent},
   {path: "home",component:HomeComponent},
   {path: "about", component:AboutComponent},
   {path: "rewards", component:RewardsComponent},
@@ -43,7 +36,9 @@ const routes: Routes = [
   {path: "public-annoucement", component:PublicAnnoucementComponent},
   {path: "team", component:TeamComponent},
   {path: "dialog", component:DialogComponent},
-  {path: "public-rewards", component: PublicRewardsComponent}
+  {path: "public-rewards", component: PublicRewardsComponent},
+  {path: "rules", component: RulesComponent},
+  {path: "admin-home", component: AdminHomeComponent}
 ];
 
 @NgModule({

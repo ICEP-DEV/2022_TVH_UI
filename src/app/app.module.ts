@@ -4,7 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
-
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
@@ -13,7 +12,6 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginFormComponent } from './login-form/login-form.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ParticipantComponent } from './participant/participant.component';
@@ -25,6 +23,10 @@ import { LayoutComponent } from './layout/layout.component';
 import { TeamComponent } from './team/team.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { LogoutComponent } from './logout/logout.component';
+import { FooterComponent } from './footer/footer.component';
+import { PublicRewardsComponent } from './public-rewards/public-rewards.component';
+import { RulesComponent } from './rules/rules.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
 
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -47,10 +49,6 @@ import { CKEditorModule } from 'ng2-ckeditor';
 import { A11yModule } from '@angular/cdk/a11y';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
-import { FooterComponent } from './footer/footer.component';
-import { PublicRewardsComponent } from './public-rewards/public-rewards.component';
-
-
 
 
 
@@ -63,7 +61,6 @@ import { PublicRewardsComponent } from './public-rewards/public-rewards.componen
     GalleryComponent,
     RegistrationFormComponent,
     LoginFormComponent,
-    LandingPageComponent,
     UserLoginComponent,
     SignUpComponent,
     LayoutComponent,
@@ -76,7 +73,9 @@ import { PublicRewardsComponent } from './public-rewards/public-rewards.componen
     DialogComponent,
     LogoutComponent,
     FooterComponent,
-    PublicRewardsComponent
+    PublicRewardsComponent,
+    RulesComponent,
+    AdminHomeComponent
 
   ],
   imports: [
