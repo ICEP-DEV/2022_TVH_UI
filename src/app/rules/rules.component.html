@@ -7,33 +7,32 @@
 
 </head>
 <body>
-  <section>
-  <nav class="thenav" >
-
-    <div class="nav-links"*ngIf="showMe">
-
+  <section class="menu">
+    <nav class="thenav" >
       <a href=""><img src="../assets/tut-logo.png"></a>
-       <h1>Tshwane varsity hackathon 2022</h1>
-      <ul >
-        <li><a href="">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="rules">Rules</a></li>
-        <li><a href="public-annoucement">Announcements</a></li>
-        <li><a href="public-gallery">Gallery</a></li>
-        <li><a href="rewards">Rewards</a></li>
-        <li><a href="public-teams">Team</a></li>
+      <h1>Tshwane varsity hackathon 2022</h1>
+      <div class="nav-links">
 
-      </ul>
+        <ul >
+          <li><a href="">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="rules">Rules</a></li>
+          <li><a href="public-annoucement">Announcements</a></li>
+          <li><a href="public-gallery">Gallery</a></li>
+          <li><a href="rewards">Rewards</a></li>
+          <li><a href="public-teams">Team</a></li>
 
+        </ul>
+
+      </div>
+      <!-- <i class="las la-bars" (click)="theMenu()"></i> -->
+    </nav>
+  </section>
+  <section>
+    <div class="the-image-header">
+      <h1 class="ann-heading">TVH Rules</h1>
     </div>
-    <i class="las la-bars" (click)="theMenu()"></i>
-  </nav>
-</section>
-<section>
-  <div class="back">
-    <h1>TVH Rules</h1>
-  </div>
-</section>
+  </section>
 <section class="main">
   <h2>Competition Rules</h2>
   <p>By entering, you agree to accept these terms and conditions, and warrant that you meet the entry requirements.</p>

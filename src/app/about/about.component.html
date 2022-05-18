@@ -8,35 +8,35 @@
 
 </head>
 <body>
-  <section>
-  <nav class="thenav" >
-
-    <div class="nav-links"*ngIf="showMe">
-
+  <section class="menu">
+    <nav class="thenav" >
       <a href=""><img src="../assets/tut-logo.png"></a>
-       <h1>Tshwane varsity hackathon 2022</h1>
-      <ul >
-        <li><a href="">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="rules">Rules</a></li>
-        <li><a href="public-annoucement">Announcements</a></li>
-        <li><a href="home">Gallery</a></li>
-        <li><a href="rewards">Rewards</a></li>
-        <li><a href="public-teams">Team</a></li>
+      <h1>Tshwane varsity hackathon 2022</h1>
+      <div class="nav-links">
 
-      </ul>
 
-    </div>
-    <i class="las la-bars" (click)="theMenu()"></i>
-  </nav>
-</section>
-<section>
-<br>
-<br>
+        <ul >
+          <li><a href="">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="rules">Rules</a></li>
+          <li><a href="public-annoucement">Announcements</a></li>
+          <li><a href="public-gallery">Gallery</a></li>
+          <li><a href="rewards">Rewards</a></li>
+          <li><a href="public-teams">Team</a></li>
 
+        </ul>
+
+      </div>
+      <!-- <i class="las la-bars" (click)="theMenu()"></i> -->
+    </nav>
+  </section>
+ <section>
+<div class="the-main">
+  <h1 class="ann-heading">About </h1>
+</div>
 <div class="main">
 <h1>What is TVH?</h1>
-<p>The Tshwane Varsity Hackathon is a hacking competition that is organisedby the Tshwane University Of Technology's<br>
+<p>The Tshwane Varsity Hackathon is a hacking competition that is organised by the Tshwane University Of Technology's<br>
 faculty of information and communication  technology and research and innovation office.
 <br>
 <br>
@@ -50,10 +50,9 @@ Each team will be allocated a mentor/coach to work with during the duration of t
 </section>
 <section class="para">
   <p>The Tshwane Varsity Hackathon is open to students from Tshwane University Of Technology.</p>
-
 </section>
 <section>
-  <p>NO APPLICATION FEE REQUIRED.</p>
+  <p><span>NO APPLICATION FEE REQUIRED.</span></p>
   <br>
   <p>Teams will be formed during the workshop day.</p>
   <h2>What do you need?</h2>

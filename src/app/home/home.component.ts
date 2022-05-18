@@ -9,15 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-  showMe:boolean = true
+
 
   ngOnInit(): void {
 
   }
-  theMenu()
-  {
-    this.showMe=!this.showMe
-  }
+
 
 
 }

@@ -3,10 +3,19 @@
   *{ margin: 0;
     padding: 0;
   }
-nav img{
+   .thenav img{
   width: 35px;
-  margin-left: -80px;
+  margin-left: -40px;
   margin-top: 2px;
+}
+.thenav{
+  display: flex;
+  justify-content:center ;
+  align-items: right;
+  background: #fff;
+  position: sticky;
+  top: 0;
+
 }
 
 .nav-links ul li{
@@ -24,9 +33,6 @@ nav img{
   right: 0;
   text-align: left;
   z-index: 2;
-}
-.nav-links
-{
   display: none;
 }
 
@@ -39,14 +45,12 @@ nav .las{
   cursor: pointer;
 }
 
-.nav-links h1{
+.thenav h1{
 
   color: #003782;
-  margin-top: -47px;
-  position: relative;
-  left: -22%;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 15px;
+  text-align: center;
 }
 .nav-links ul li a{
 
@@ -111,7 +115,7 @@ nav .las{
   *{ margin: 0;
     padding: 0;
   }
-  .nav-links{
+  .thenav{
     display: flex;
     justify-content:center ;
     align-items: right;
@@ -120,7 +124,7 @@ nav .las{
     top: 0;
 
 }
-nav img{
+.thenav img{
   width: 70px;
   margin-left: -180px;
   margin-top: 5px;
@@ -130,10 +134,105 @@ nav img{
     list-style: none;
     margin: 20px 0px;
 }
-h2{
-  text-align: center;
-  font-weight: 500;
-  font-size: 25px;
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -28%;
+
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  font-weight: bold;
+  left: -8%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+.container{
+  width: 100%;
+  height: 170vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  display:block;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 70%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 12%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 30px;
+  width: 75%;
+  font-size: 15px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+}
+@media only screen and (min-width: 600px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 70px;
+  margin-left: -180px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
 }
 .nav-links ul li{
     font-family: Arial;
@@ -142,10 +241,11 @@ h2{
     right: -28%;
 
 }
-.nav-links h1{
+.thenav h1{
   color: #003782;
   margin-top: 15px;
   position: relative;
+  font-weight: bold;
   left: -8%;
 }
 .nav-links ul li a{
@@ -166,7 +266,7 @@ h2{
   *{ margin: 0;
     padding: 0;
   }
-  .nav-links{
+  .thenav{
     display: flex;
     justify-content:center ;
     align-items: right;
@@ -174,9 +274,8 @@ h2{
     position: sticky;
     top: 0;
 
-
 }
-nav img{
+.thenav img{
   width: 60px;
   margin-left: 1px;
   margin-top: 5px;
@@ -193,7 +292,7 @@ nav img{
     right: 2%;
 
 }
-.nav-links h1{
+.thenav h1{
   color: #003782;
   margin-top: 15px;
   position: relative;
@@ -216,7 +315,7 @@ nav img{
 }
 .container{
   width: 100%;
-  height: 160vh;
+  height: 180vh;
   }
   .container input{
   width: 30%;
@@ -272,7 +371,7 @@ nav img{
   *{ margin: 0;
     padding: 0;
   }
-  .nav-links{
+  .thenav{
     display: flex;
     justify-content:center ;
     align-items: right;
@@ -281,7 +380,7 @@ nav img{
     top: 0;
 
 }
-nav img{
+.thenav img{
   width: 70px;
   margin-left: -140px;
   margin-top: 5px;
@@ -298,10 +397,11 @@ nav img{
     right: -28%;
 
 }
-.nav-links h1{
+.thenav h1{
   color: #003782;
   margin-top: 15px;
   position: relative;
+  font-weight: bold;
   left: -6%;
 }
 .nav-links ul li a{
@@ -318,7 +418,7 @@ nav img{
 }
 .container{
   width: 100%;
-  height: 130vh;
+  height: 150vh;
   }
   .container input{
   width: 30%;
@@ -374,7 +474,7 @@ nav img{
   *{ margin: 0;
     padding: 0;
   }
-  .nav-links{
+  .thenav{
     display: flex;
     justify-content:center ;
     align-items: right;
@@ -383,7 +483,7 @@ nav img{
     top: 0;
 
 }
-nav img{
+.thenav img{
   width: 72px;
   margin-left: -170px;
   margin-top: 5px;
@@ -400,11 +500,12 @@ nav img{
     right: -25%;
 
 }
-.nav-links h1{
+.thenav h1{
   color: #003782;
   margin-top: 15px;
   position: relative;
   left: -6%;
+  font-weight: bold;
   font-size: 24px;
 }
 .nav-links ul li a{
@@ -422,7 +523,7 @@ nav img{
 }
 .container{
   width: 100%;
-  height: 130vh;
+  height: 160vh;
   }
   .container input{
   width: 30%;
@@ -436,6 +537,7 @@ nav img{
   border-radius: 5px;
   padding: 5px;
   font-size: 18px;
+  display: block;
   }
   .theAge input[type="text"]
   {
@@ -469,9 +571,7 @@ nav img{
   background-color: #002252;
   cursor: pointer;
   }
-  .las{
-    display: none;
-  }
+
 }
 
 
