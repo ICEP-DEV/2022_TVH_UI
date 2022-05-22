@@ -66,6 +66,16 @@ nav .las{
   background-position: center;
   background-size: cover;
 }
+.ann-heading{
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 25%;
+  left: 25%;
+  }
+
 .hori-line{
   width: 10%;
   height: 2px;
