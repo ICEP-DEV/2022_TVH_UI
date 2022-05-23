@@ -13,7 +13,7 @@
     <mat-card class='my-5 mat-elevation-z5 p-0'>
 
       <mat-card-header class="mat-card-header">
-          <mat-card-title class="p-2" *ngIf='!editMode'>ADD POST</mat-card-title>
+          <mat-card-title class="p-2" *ngIf='!editMode'>ADD POST ON ANNOUNCEMENT</mat-card-title>
 
       </mat-card-header>
 
@@ -28,10 +28,12 @@
           <p>Date</p>
           <input  type="date" class="date" placeholder="Enter date" required   [(ngModel)]="date" id="dates" name="dates">
 
-          <ckeditor [(ngModel)]="post.body"       
+          <ckeditor [(ngModel)]="post.body" [disabled]="readonly"        
           id="body"
           name="body"
-          type="divarea" >
+          type="divarea"
+          [config]="{ toolbar:  'full' } " 
+          >
             
           </ckeditor>
 

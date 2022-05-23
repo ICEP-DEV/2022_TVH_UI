@@ -3,6 +3,7 @@ import {ApiserviceService} from '../apiservice.service';
 import { Router } from '@angular/router';
 import {ReactiveFormsModule, FormsModule, Validators, FormGroup, FormControl, FormBuilder} from '@angular/forms';
 import {  EventEmitter, Input, Output } from '@angular/core';
+import Swal from 'sweetalert2';
 
 ///for drop down
 interface institutess {
@@ -51,6 +52,8 @@ export class RegistrationFormComponent implements OnInit {
   //reactiveForm: registerForm;
   //registerForm: FormGroup;
   submitted: boolean = false;
+  selectedOption = '1';
+  selectedUser = null;
 
   constructor(private service:ApiserviceService, private route:Router, private formBuilder: FormBuilder) {
 
@@ -59,6 +62,8 @@ export class RegistrationFormComponent implements OnInit {
  // registerForm!: FormGroup;
 
   institutes: institutess[] = [
+
+   
     {value: 'Faculty Of Information And Communication Technology', viewValue: 'Faculty Of Information And Communication Technology'},
     {value: 'Faculty Of Management Sciences', viewValue: 'Faculty Of Management Sciences'},
     {value: 'Faculty Of Arts And Design', viewValue: 'Faculty Of Arts And Design'},
@@ -69,16 +74,22 @@ export class RegistrationFormComponent implements OnInit {
     {value: 'M', viewValue: 'Male'},
     {value: 'F', viewValue: 'Female'},
 
+    
+
   ];
 
     skill: skillss[] = [
-    {value: 'Analyst', viewValue: 'Analyst'},
-    {value: 'Frontend Developer', viewValue: 'Frontend Developer'},
-    {value: 'Backend Developer', viewValue: 'Backend Developer'},
-    {value: 'Marketer', viewValue: 'Marketer'},
-    {value: 'Graphic designer', viewValue: 'Graphic designer'},
+    {value: 'Business Analyst', viewValue: 'Business Analyst'},
+    {value: 'Programmer', viewValue: 'Programmer'},
+    {value: 'UX designer', viewValue: 'UX designer'},
+    {value: 'UI designer', viewValue: 'UI designer'},
+    {value: 'Tester', viewValue: 'Tester'},
+    {value: 'Enthusiast', viewValue: 'Enthusiast'},
+    {value: 'Scrum Master', viewValue: 'Scrum Master'},
+    {value: 'Entrepreneur', viewValue: 'Entrepreneur'},
 
-    
+
+
     
 
   ];
@@ -108,26 +119,18 @@ export class RegistrationFormComponent implements OnInit {
 
     this.registerForm = new FormGroup({
 
-      "studentNumber": new FormControl(null,[Validators.required, Validators.pattern('[0-9]*')] ),
-      "names": new FormControl(null, [Validators.required, Validators.pattern('[a-zA-z]*')]),///
+      "studentNumber": new FormControl(null,[Validators.required, Validators.pattern('[0-9]*'), Validators.maxLength(9), Validators.minLength(9)] ),
+      "names": new FormControl(null, [Validators.required, Validators.pattern('[a-zA-z ]*')]),///
       "surname": new FormControl(null, [Validators.required, Validators.pattern('[a-zA-z]*')]),
       "genders": new FormControl(null,Validators.required ),
       "campuses": new FormControl(null,Validators.required ),
-      "dates": new FormControl(null,Validators.required ),
       "email": new FormControl(null, [Validators.required, Validators.email]),///
       "institutes": new FormControl(null,Validators.required ),
       "special": new FormControl(null, [Validators.required, Validators.pattern('[a-zA-z]*')]),
-      "mobileNumber": new FormControl(null,[Validators.required, Validators.pattern('[0-9]*')] ),
+      "mobileNumber": new FormControl(null,[Validators.required, Validators.pattern('[0-9]*'), Validators.maxLength(10), Validators.minLength(10)] ),
+      "age": new FormControl(null,[Validators.required, Validators.pattern('[0-9]*')] ),
       "skill": new FormControl(null,Validators.required ),
       "level": new FormControl(null,Validators.required ),
-      "hobby": new FormControl(null, [Validators.required, Validators.pattern('[a-zA-z]*')]),
-      
-      
-      
-      
-      
-      
-      
       
     })
   }
@@ -139,16 +142,15 @@ export class RegistrationFormComponent implements OnInit {
   public student :string =''
   public names :string =''
   public surname:string =''
-  public gender:string =''
-  public dateBirth:string =''
+  public gender = null;
+  public ages= null;
   public stud_email:string =''
-  public facult:string =''
+  public facult = null;
   public  mNumber:string =''
-  public skills:string =''
-  public leve:string =''
-  public spec:string =''
-  public hob:string =''
-  public campus:string =''
+  public skills= null;
+  public leve= null;
+  public spec= null;
+  public campus= null;
   
 
  
@@ -166,15 +168,15 @@ export class RegistrationFormComponent implements OnInit {
   get namess(){return this.registerForm.get('names');}
   get surnames(){return this.registerForm.get('surname');}
   get genderss(){return this.registerForm.get('genders');}
-  get datess(){return this.registerForm.get('dates');}
   get emails(){return this.registerForm.get('email');}
   get institutess(){return this.registerForm.get('institutes');}
   get mobilenumber(){return this.registerForm.get('mobileNumber');}
+  get age(){return this.registerForm.get('age');}
   get skil(){return this.registerForm.get('skill');}
   get lev(){return this.registerForm.get('level');}
   get specs(){return this.registerForm.get('special');}
-  get hobs(){return this.registerForm.get('hobby');}
   get campusess(){return this.registerForm.get('campuses');}
+  
   
 
  
@@ -186,6 +188,13 @@ export class RegistrationFormComponent implements OnInit {
 
 
  get f(){return this.registerForm.controls}
+
+
+
+ title ='sweetalert2';
+ alertWithSuccess(){
+   Swal.fire("Thank you... ", 'Your application was successfully submitted ','success')
+ }
 
 
 
@@ -209,6 +218,8 @@ export class RegistrationFormComponent implements OnInit {
       
       return;
     }else 
+
+
     {
 
       //this.hold = this.registerForm.valid;
@@ -218,26 +229,52 @@ export class RegistrationFormComponent implements OnInit {
 
 
 
-      this.service.getRegistration({"student_number":this.student, "student_name":this.names, "student_surname": this.surname,"student_gender": this.gender,"student_dob": this.dateBirth,"student_email": this.stud_email,"student_cellno": this.mNumber,"participant_skills": this.skills, "student_faculty": this.facult,"specialization": this.spec, "student_level": this.leve, "student_campus": this.campus, "student_hobby": this.hob }).subscribe((res)=>{
+      this.service.getRegistration({"stud_number":this.student, "name":this.names, "surname": this.surname,"gender": this.gender,"age": this.ages,"stud_email": this.stud_email,"faculty": this.facult,"mobile_number": this.mNumber, "skills": this.skills,"level": this.leve, "specialization": this.spec, "campus": this.campus }).subscribe((res)=>{
+        console.log(this.student);
         console.log(this.names);
         console.log(this.surname);
         console.log(this.gender);
-        console.log(this.dateBirth);
+        console.log(this.age);
         console.log(this.stud_email);
         console.log(this.facult);
-       
         console.log(this.mNumber);
         console.log(this.skills);
-        console.log(res.message);
+        console.log(this.leve);
+        console.log(this.spec);
+        console.log(res.campus);
 
         if(res.message =="Application successfully captured✔✔✔")
         {
-            alert(res.message);
+          Swal.fire(
+            'Application successfully submitted!',
+            'Please check your email!',
+            'success'
+          )
+
             this.registerForm.reset();
-            this.route.navigate(["home"])
+            // this.route.navigate([""])
         }
-        else{
-          alert(res.message);
+        if(res.message =="Email already signed up!!!")
+        {
+
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Email already signed up!',
+            
+          })
+          
+        }
+        if(res.message =="Please enter your tut4life email")
+        {
+
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please enter your tut4life email!',
+            
+          })
+
         }
       });
 

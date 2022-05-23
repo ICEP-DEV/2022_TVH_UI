@@ -3,6 +3,7 @@ import {ApiserviceService} from '../apiservice.service';
 import { Router } from '@angular/router';
 import {ReactiveFormsModule, FormsModule, Validators, FormGroup, FormControl} from '@angular/forms';
 import {  EventEmitter, Input, Output } from '@angular/core';
+import Swal from 'sweetalert2'
 
 
 @Component({
@@ -55,6 +56,13 @@ export class LoginAdminComponent implements OnInit {
       if(res.message =="login Successful")
       {
         //alert("You are successful loged in")
+        Swal.fire({
+          
+          icon: 'success',
+          title: 'Successfully login',
+          showConfirmButton: false,
+          timer: 2500
+        })
           this.route.navigate(["layout"])
           
       }

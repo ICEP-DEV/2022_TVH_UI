@@ -38,6 +38,9 @@ export class HomeComponent implements OnInit {
     this.min = Math.floor((distance %(1000 * 60 * 60)) /(1000 * 60 ));
     this.secs = Math.floor((distance %(1000 * 60 )) /(1000 ));
 
+
+    
+
     if(distance < 0)
     {
       clearInterval(this.x)

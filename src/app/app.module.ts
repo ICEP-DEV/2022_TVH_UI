@@ -15,7 +15,6 @@ import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { Injectable } from '@angular/core';
 import { AdminboardComponent } from './adminboard/adminboard.component';
 import { TestingComponent } from './testing/testing.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { ParticipantComponent } from './participant/participant.component';
@@ -33,6 +32,27 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
 import { TestComponent } from './test/test.component';
+import { FooterComponent } from './footer/footer.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { TeamComponent } from './team/team.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatOptionModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { TeamsComponent } from './teams/teams.component';
+import { StripTagsComponent } from './strip-tags/strip-tags.component';
+import { RulesComponent } from './rules/rules.component';
+import { PublicTeamsComponent } from './public-teams/public-teams.component';
+import { LogoutComponent } from './logout/logout.component';
+import { PostComponent } from './post/post.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { PublicGalleryComponent } from './public-gallery/public-gallery.component';
+import { EditdialogComponent } from './editdialog/editdialog.component';
+import { AnnouncementlistComponent } from './announcementlist/announcementlist.component';
+
 
 
 
@@ -48,7 +68,6 @@ import { TestComponent } from './test/test.component';
     RegistrationFormComponent,
     AdminboardComponent,
     TestingComponent,
-    LandingPageComponent,
     SignUpComponent,
     UserLoginComponent,
     ParticipantComponent,
@@ -58,6 +77,19 @@ import { TestComponent } from './test/test.component';
     RewardComponent,
     PublicAnnoucementComponent,
     TestComponent,
+    FooterComponent,
+    DialogComponent,
+    TeamComponent,
+    TeamsComponent,
+    StripTagsComponent,
+    RulesComponent,
+    PublicTeamsComponent,
+    LogoutComponent,
+    PostComponent,
+    PublicGalleryComponent,
+    EditdialogComponent,
+    AnnouncementlistComponent,
+    
  
     
     
@@ -78,7 +110,17 @@ import { TestComponent } from './test/test.component';
     MatCardModule,
     MatMenuModule,
     FormsModule,
-    CKEditorModule
+    CKEditorModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatOptionModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatInputModule,
+    MatSelectModule,
+    MatCheckboxModule
+
+    
     
 
   ],

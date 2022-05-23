@@ -1,334 +1,783 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial;
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
+@media only screen and (max-width: 600px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+   .thenav img{
+  width: 35px;
+  margin-left: -40px;
+  margin-top: 2px;
+}
+.thenav{
+  display: flex;
+  justify-content:center ;
+  align-items: right;
+  background: #fff;
+  position: sticky;
+  top: 0;
+
+}
+
+.nav-links ul li{
+  display: block;
+  padding: 5px;
+
+}
+.nav-links{
+  position: absolute;
+  background: #003782;
+  color:#fff;
+  height: 70vh;
+  width: 200px;
+  top:0;
+  right: 0;
+  text-align: left;
+  z-index: 2;
+  display: none;
+}
+
+nav .las{
+  display: block;
+  color: #e6b012;
+  margin: 10px;
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.thenav h1{
+
+  color: #003782;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+.nav-links ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 8px 12px;
+
 }
 .container{
   width: 100%;
-  height: 140vh;
-  background:#fff;
-  background-position: center;
-  background-size: cover;
-}
-.gen-date{
-display: inline;
-}
-.pic-logo img{
-  width: 150px;
-  position: relative;
-  left: 40%;
-  margin-top: 20px;
-}
-.heading{
-  background: #090155;
-  position: relative;
-  left: 15%;
-  width: 700px;
-  height: 70px;
-
-}
-.heading h1{
-  position: relative;
-  top: 30%;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 40px;
-  font-weight: bold;
+  height: 170vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  display:block;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 70%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 12%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 30px;
+  width: 75%;
+  font-size: 15px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
   color: #fff;
-}
-
-.reg-form{
-  width: 1000px;
-  height: 1980px;
-  background: #e9e9e9;
-  position: relative;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-
-}
-
-.reg-form input{
-  width: 50%;
-
-  margin-left: 30px;
-  margin-top: 10px;
-}
-
-.reg-form p{
-  font-size: 20px;
-  font-weight: 600;
-  padding-top: 30px;
-  padding-left: 30px;
-  color: #000;
-}
-.reg-form input[type="text"]
-{
+  font-size: 18px;
+  width: 100px;
   outline: none;
   border: none;
-  width: 60%;
+  height: 40px;
+  margin-left: 40px;
 
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+}
+@media only screen and (min-width: 600px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 70px;
+  margin-left: -180px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -28%;
+
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  font-weight: bold;
+  left: -8%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+.container{
+  width: 100%;
+  height: 170vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  display:block;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 70%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 12%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 30px;
+  width: 75%;
+  font-size: 15px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+}
+@media only screen and (min-width: 600px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 70px;
+  margin-left: -180px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -28%;
+
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  font-weight: bold;
+  left: -8%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+
+}
+@media only screen and (min-width: 768px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 60px;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: 2%;
+
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  left: 1%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+    font-size: 13px;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+.container{
+  width: 100%;
+  height: 180vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 6%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 35px;
+  width: 31%;
+  font-size: 18px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+  .las{
+    display: none;
+  }
+
+}
+@media only screen and (min-width: 992px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 70px;
+  margin-left: -140px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -28%;
+
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  font-weight: bold;
+  left: -6%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+.container{
+  width: 100%;
+  height: 150vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 6%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 35px;
+  width: 31%;
+  font-size: 18px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+  .las{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 72px;
+  margin-left: -170px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -25%;
+
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  left: -6%;
+  font-weight: bold;
+  font-size: 24px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+    font-size: 19px;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+.container{
+  width: 100%;
+  height: 160vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  display: block;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 6%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 35px;
+  width: 31%;
+  font-size: 18px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+
+}
+
+@media (min-width:1920px){
+  *{ margin: 0;
+    padding: 0;
+  }
+  .nav-links{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+nav img{
+  width: 70px;
+  margin-left: -540px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -28%;
+
+}
+.nav-links h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  left: -22%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+.container{
+  width: 100%;
+  height: 100vh;
+}
+.container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.container input[type="text"]
+{
+  border: 1px solid #000;
+  width: 30%;
+  border-radius: 5px;
   padding: 5px;
   font-size: 18px;
 }
-.reg-form input[type ="date"]{
-  outline: none;
-  border: none;
-  width: 60%;
-
+.theAge input[type="text"]
+{
+  border: 1px solid #000;
+  width: 6%;
+  border-radius: 5px;
   padding: 5px;
-  font-size: 15px;
-}
-.submit-btn{
-outline: none;
-border: none;
-margin-top: 60px;
-position: relative;
-left: 14%;
-cursor: pointer;
-height:45px;
-width: 40%;
-font-size: 20px;
-background: #ff0000;
-color: #fff;
-font-weight: bold;
-border-radius: 20px;
-margin-left: 175px;
-transition: .6s ease;
-}
-.browser{
-color: #000;
-font-weight: bold;
-font-size: 18px;
-
-}
-.submit-btn:hover{
-  background: #0059ff;
-  color: #fff;
+  font-size: 18px;
 }
 select{
   padding-top: 5px;
-  margin-left: 30px;
-  border: none;
-  outline: none;
-  height: 30px;
-  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 35px;
+  width: 31%;
   font-size: 18px;
+  margin-left: 40px;
 }
-@media (max-width:1400px) {
+.btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+}
+.btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+}
+}
+@media (min-width:1920px){
   *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 100px;
+  margin-left: -430px;
+  margin-top: 5px;
+}
+.thenav ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
     font-family: Arial;
-  }
-  .container{
-    width: 100%;
-    height: 250vh;
-    background:#fff;
-    background-position: center;
-    background-size: cover;
-  }
-  .gen-date{
-  display: inline;
-  }
-  .pic-logo img{
-    width: 130px;
+    font-size: 18px;
     position: relative;
-    left: 40%;
-    margin-top: 20px;
-  }
-  .heading{
-    background: #090155;
-    position: relative;
-    left: 6%;
-    width: 700px;
-    height: 70px;
+    right: -28%;
 
-  }
-  .heading h1{
-    position: relative;
-    top: 30%;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 35px;
-    font-weight: bold;
-    color: #fff;
-  }
-
-  .reg-form{
-    width: 800px;
-    height: 1400px;
-    background: #e9e9e9;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-  }
-  .reg-form input{
-    width: 50%;
-
-    margin-left: 30px;
-    margin-top: 10px;
-  }
-
-  .reg-form p{
-    font-size: 15px;
-    font-weight: 600;
-    padding-top: 30px;
-    padding-left: 30px;
-    color: #000;
-  }
-  .reg-form input[type="text"]
-  {
-    outline: none;
-    border: none;
-    width: 60%;
-
-    padding: 5px;
-    font-size: 15px;
-  }
-  .reg-form input[type ="date"]{
-    outline: none;
-    border: none;
-    width: 60%;
-
-    padding: 5px;
-    font-size: 15px;
-  }
-.submit-btn{
-  margin: 40px auto 20px;
-  width: 30%;
-  display: block;
-  outline: none;
-  padding: 10px 0;
-  border-radius: 20px;
-  font-weight: bold;
-  border:none;
-  cursor: pointer;
-  background: #ff0000;
-  color:#fff;
-  font-size: 15px;
-  transition: .6s ease-in;
 }
-  .browser{
-  color: #000;
-  font-weight: bold;
-  font-size: 15px;
-
-  }
-  .submit-btn:hover{
-    background: #0059ff;
-    color: #fff;
-  }
-  select{
-    padding-top: 5px;
-    margin-left: 30px;
-    border: none;
-    outline: none;
-    height: 30px;
-    width: 60%;
-    font-size: 15px;
-  }
-}
-@media (max-width:804px) {
-  .container{
-    width: 100%;
-    height: 260vh;
-    background:#fff;
-    background-position: center;
-    background-size: cover;
-  }
-  .heading{
-    background: #090155;
-    position: relative;
-    left: 5%;
-    width: 355px;
-    height: 70px;
-  }
-  .heading h1{
-    position: relative;
-    top: 30%;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #fff;
-  }
-.reg-form{
-  width: 400px;
-  height: 1285px;
-  background:#f3f2f2;
-  left: 50%;
-  top: 130%;
-  position: absolute;
-  transform: translate(-50%,-50%);
-}
-.reg-form p{
-  font-size: 12px;
-  font-weight: 600;
-  padding-top: 30px;
-  padding-left: 30px;
-  color: #000;
-}
-.pic-logo img{
-  width: 90px;
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
   position: relative;
-  left: 40%;
-  margin-top: 20px;
+  left: -15%;
+  font-size: 35px;
 }
-.browser{
-  color: #000;
-  font-weight: bold;
-  font-size: 12px;
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+    font-size: 22px;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
 
-  }
-  .reg-form input[type="text"]
+}
+
+.container{
+  width: 100%;
+  height: 130vh;
+}
+.container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.container input[type="text"]
 {
-  outline: none;
-  border: none;
-  width: 60%;
-
+  border: 1px solid #000;
+  width: 30%;
+  border-radius: 5px;
   padding: 5px;
-  font-size: 12px;
+  font-size: 18px;
+}
+.theAge input[type="text"]
+{
+  border: 1px solid #000;
+  width: 6%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
 }
 select{
   padding-top: 5px;
-  margin-left: 30px;
-  border: none;
-  outline: none;
-  height: 30px;
-  width: 60%;
-  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 35px;
+  width: 31%;
+  font-size: 18px;
+  margin-left: 40px;
 }
-.login-btn{
+.btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
   outline: none;
   border: none;
-  margin-top: 60px;
-  position: relative;
-  left: 3%;
-  cursor: pointer;
-  height:35px;
-  width: 36%;
-  font-size: 14px;
-  background: #ff0000;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 20px;
-  margin-left: 89px;
-  transition: .6s ease;
-  }
-  .login-btn:hover{
-    background: #0059ff;
-    color: #fff;
-  }
- }
+  height: 40px;
+  margin-left: 40px;
 
+}
+.btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+}
+
+}
 .alert
 {
   color: rgb(245, 17, 17);
   align-items: center;
-  margin-left: 30px;
+  margin-left: 38px;
 }
