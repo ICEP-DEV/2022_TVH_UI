@@ -1,94 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TVH WEBSITE</title>
+  <title>About Page</title>
 
 </head>
 <body>
-  <section class="menu">
+  <section>
+    <nav class="thenav" >
 
-    <nav class="thenav">
+      <div class="nav-links"*ngIf="showMe">
 
-      <a href="home"><img src="../assets/tut-logo.png"></a>
+        <a href=""><img src="../assets/tut-logo.png"></a>
+        <h1>Tshwane varsity hackathon 2022</h1>
+        <ul >
+          <li><a href="">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="rules">Rules</a></li>
+          <li><a href="public-annoucement">Announcements</a></li>
+          <li><a href="home">Gallery</a></li>
+          <li><a href="public-rewards">Rewards</a></li>
+          <li><a href="public-teams">Team</a></li>
 
-      <div class="nav-links">
-        <ul>
-          <li><a href="home">HOME</a></li>
-          <li><a href="about">ABOUT</a></li>
-          <li><a href="rewards">ANNOUNCEMENT</a></li>
-          <li><a href="gallery">REWARD</a></li>
-          <li><a href="gallery">TEAM</a></li>
         </ul>
+
       </div>
+      <i class="las la-bars" (click)="theMenu()"></i>
     </nav>
   </section>
+  <section>
+  <br>
+  <br>
 
-
-<section class="container">
-  <div class="pic">
-    <img src="../assets/aboutPic.jpg">
-    <h1 class="heading">What do you need?</h1>
-    <p class="para-word"> You will need your laptop/desktop and<br>internet connection to connect to the online event.</p>
-    <h1 class="def-word">What Is TVH ?</h1>
+  <div class="main">
+  <h1>What is TVH?</h1>
+  <p>The Tshwane Varsity Hackathon is a hacking competition that is organisedby the Tshwane University Of Technology's<br>
+  faculty of information and communication  technology and research and innovation office.
+  <br>
+  <br>
+  On the day of Hackathon, participants will be requested to come up with solutions to certain real-life problems by using technology.<br>
+  Each team will be allocated a mentor/coach to work with during the duration of the hackathon.
+  </p>
   </div>
+  </section>
+  <section>
+  <div class="horizontal-line"></div>
+  </section>
+  <section class="para">
+    <p>The Tshwane Varsity Hackathon is open to students from Tshwane University Of Technology.</p>
 
-  <div class="tshwane-var">
-    <p class="tshwane-v">The Tshwane Varsity Hackthon is a hacking competition<br> that is organised by the Tshwane University of Technology's<br>faculty of
-      Information and Communication Technology and the<br> Technology and Research & Innovation office.<br><br>
-     On the day of the hackathon, participants will be requested<br> to come up with solutions to certain real-life problems by<br> using technology.<br>
-     Each teams will be allocated a mentor/coach to work with<br> during the duration of the Hackthon.
-     </p>
-  </div>
-  <div class="part-board">
-    <h1>Who Can Participate ?</h1>
-  </div>
-  <div class="participate-board">
-    <p>The Tshwane Varsity Hackthon is open to students from TUT,<br>UP,SMU and UNISA.</p>
-  </div>
-  <div class="app-fee">
-    <h1> Application Fee? </h1>
-  </div>
-  <div class="fee-ans">
-    <p>Joining the Tshwane Varsity Hackthon is Completely Free!</p>
-  </div>
-  <div class="teams-form">
-    <h1>How will teams be formed ?</h1>
-  </div>
-   <div class="workshop">
-    <p>The teams will be formed during the workshop day</p>
-   </div>
-
-
-</section>
-
-
-
-<section>
-  <div class="footer">
-
-
-      <nav class="navig-bar">
-        <div class="nav-bars">
-          <ul>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Rules</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Personnel Portal</a></li>
-          </ul>
-        </div>
-
-      </nav>
-
-
-
-    <p>Copyrights&copy; TUT 2022</p>
-  </div>
-
-</section>
-
+  </section>
+  <section>
+    <p>NO APPLICATION FEE REQUIRED.</p>
+    <br>
+    <p>Teams will be formed during the workshop day.</p>
+    <h2>What do you need?</h2>
+    <p>You will need your laptop/desktop and internet connection to connect to the online event.</p>
+  </section >
 </body>
+<app-footer></app-footer>
 </html>

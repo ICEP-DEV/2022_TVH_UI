@@ -1,21 +1,325 @@
-.grid-container {
-  margin: 20px;
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
 }
-
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
+.content {
+  margin: 40px;
+  left: 10%;
+  justify-content: space-between;
 }
-
-.dashboard-card-content {
+.container-fluid{
+  width: 100%;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+}
+.col-lg-3{
+  position: relative;
+  width: 100%;
+  left: 10%;
+}
+.col-6{
+  flex: 0 0 25%;
+  max-width: 50%;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+.small-box {
+  text-align:left;
+}
+.small-box {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+  height: 125px;
+}
+.bg-info {
+  color: #fff!important;
+}
+.bg-info {
+  background-color: #d2d3ff!important;
+}
+.small-box .inner {
+  padding: 10px;
+}
+.small-box h1,
+.small-box p {
+  z-index: 5;
+}
+.small-box h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+  padding: 0;
+  white-space: nowrap;
+}
+.small-box h1 {
+  display: block;
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.small-box p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 25px;
+  color: #6b6c6d;
+}
+.small-box .icon {
+  position: relative;
+  left: 75%;
+  font-size: 80px;
+  color: rgba(0,0,0,.15);
+  bottom: 145px;
+  font-size: 90px;
+}
+.bg-reg{
+  color: #fff;
+  background-color: #f7e582!important;
+}
+.card {
+  box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+  margin-bottom: 1rem;
+}
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  padding: 0.75rem 1.25rem;
+  position: relative;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.card-title {
+  float: left;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+}
+.mr-1 {
+  margin-right: 0.25rem!important;
+}
+.ion{
+    display: inline-block;
+    font-family: "Ionicons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+}
+.card-header>.card-tools {
+  float: right;
+  margin-right: -0.625rem;
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+element.style {
+    cursor: move;
+}
+.card-header:first-child {
+    border-radius: calc(.25rem - 0) calc(.25rem - 0) 0 0;
+}
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 0.75rem 1.25rem;
+    position: relative;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.border-0 {
+    border: 0!important;
+}
+.las {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.las {
+  font-weight: 400;
+}
+.la {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.btn-group, .btn-group-vertical {
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.btn-group>.btn {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.dropdown-toggle {
+  white-space: nowrap;
+}
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  box-shadow: none;
+}
+.pt-0 {
+  padding-top: 0!important;
+}
+.bootstrap-datetimepicker-widget {
+  list-style: none;
+}
+.bootstrap-datetimepicker-widget .list-unstyled {
+  margin: 0;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.bootstrap-datetimepicker-widget table {
+  width: 100%;
+  margin: 0;
+}
+table {
+  display: table;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+.bootstrap-datetimepicker-widget table th {
+  text-align: center;
+  border-radius: 0.25rem;
+}
+.table-sm td, 
+.table-sm th {
+  padding: 0.3rem;
+}
+th {
+  display: table-cell;
+}
+.card.bg-gradient-success .bootstrap-datetimepicker-widget .table th{
+  border: none;
+}
+.bootstrap-datetimepicker-widget table thead tr:first-child th {
+  cursor: pointer;
+}
+.bootstrap-datetimepicker-widget table th.picker-switch {
+  width: 145px;
+}
+.bootstrap-datetimepicker-widget .picker-switch {
   text-align: center;
 }
+.table thead th {
+  vertical-align: bottom;
+}
+.bootstrap-datetimepicker-widget table th {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.bootstrap-datetimepicker-widget table th.picker-switch {
+  width: 145px;
+}
+.bootstrap-datetimepicker-widget .picker-switch {
+  text-align: center;
+}
+.bootstrap-datetimepicker-widget table td {
+  height: 54px;
+  line-height: 54px;
+  width: 54px;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+.bootstrap-datetimepicker-widget table td span {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.bootstrap-datetimepicker-widget table td span.old {
+  color: #6c757d;
+}
+.bootstrap-datetimepicker-widget table td span {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+

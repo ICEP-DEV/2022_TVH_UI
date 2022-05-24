@@ -1,3 +1,11 @@
 mat-form-field{
     width: 100%;
 }
+mat-icon{
+    position: relative;
+    left: 97%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgrey;
+}

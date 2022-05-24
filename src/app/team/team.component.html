@@ -5,52 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>Team</title>
 </head>
 <body>
-   
-
-
-
-<mat-card class="card">
-    <div class="title">
-        <label> Leader/Mentor </label>
-        <button mat-raised-button color="primary" (click)="openDialog()"> Add </button>
-    </div>
-
- <table class="table" border="1">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Surname</th>
-                <th>Occupation</th>
-                <th>Image</th>
-                <th>Category</th>
-                <th>Description</th>
-                <th style="width: 18%;">Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Nhlakanipho</td>
-                <td>Makhaza</td>
-                <td>Intern</td>
-                <td><img class="image" src="../assets/profile.jpg" width="80" height="80"></td>
-                <td>Mentor</td>
-                <td>Experienced Business Systems Analyst with a demonstrated history of working in the computer software development industry. Skilled in Analytical Skills, Team Building, Project Management, UI design and development, Resource Management, Scrum facilitating, Tax Analysis and Business Intelligence. Strong business development professional with a Certificate focused in Business Systems Analysis from University of Cape Town.
-                    Member of Toast Masters in the year 2018.
-                    Spoken to over 2000 students across 6 provinces through the ISFAP program.
-                    A proud Alumni of TUT.</td>
-                <td>
-                    <button class="btn_edit" mat-raised-button style="background-color: darkgray;" color="primary"> Edit </button>
-                    <button class="btn_delete" mat-raised-button style="background-color: red;" color="primary"> Delete </button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</mat-card>
-
+    <mat-card class="card">
+        <div class="title">
+            <label> Leader/Mentor </label>
+            <button style="background-color: #003782;" mat-raised-button color="primary" (click)="openDialog()"><i class="las la-user-plus"></i> ADD</button>
+        </div>
+    <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Occupation</th>
+                    <th>Image</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th style="width: 18%;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nhlakanipho</td>
+                    <td>Makhaza</td>
+                    <td>Intern</td>
+                    <td><img class="image" src="../assets/profile.jpg" width="80" height="80"></td>
+                    <td>Mentor</td>
+                    <td>Experienced Business Systems Analyst with a demonstrated history of working in the computer software development industry. 
+                        Skilled in Analytical Skills, Team Building, Project Management, UI design and development, Resource Management, Scrum facilitating, Tax Analysis and Business Intelligence.
+                        Strong business development professional with a Certificate focused in Business Systems Analysis from University of Cape Town. 
+                        Member of Toast Masters in the year 2018. Spoken to over 2000 students across 6 provinces through the ISFAP program. 
+                        A proud Alumni of TUT.
+                    </td>
+                    <td>
+                        <button class="btn_edit" mat-raised-button style="background-color: #003782;" color="primary"> Edit </button>
+                        <button class="btn_delete" mat-raised-button style="background-color: #ce1127;" color="primary"> Delete </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mash</td>
+                    <td>Phurutsi</td>
+                    <td>Organizing Leading Team</td>
+                    <td><img class="image" src="../assets/mash.jpg" width="80" height="80"></td>
+                    <td>Mentor</td>
+                    <td>Experienced Business Systems Analyst with a demonstrated history of working in the computer software development industry. 
+                        Skilled in Analytical Skills, Team Building, Project Management, UI design and development, Resource Management, Scrum facilitating, Tax Analysis and Business Intelligence.
+                        Strong business development professional with a Certificate focused in Business Systems Analysis from University of Cape Town. 
+                        Member of Toast Masters in the year 2018. Spoken to over 2000 students across 6 provinces through the ISFAP program. 
+                        A proud Alumni of TUT.
+                    </td>
+                    <td>
+                        <button class="btn_edit" mat-raised-button style="background-color: #003782;" color="primary"> Edit </button>
+                        <button class="btn_delete" mat-raised-button style="background-color: #ce1127;" color="primary"> Delete </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-card>
 </body>
 </html>

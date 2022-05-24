@@ -1,2 +1,159 @@
-<app-sidebar></app-sidebar> 
+<app-sidebar></app-sidebar>  
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Admin Dashboard</title>
+</head>
 
+<body>
+    <mat-card>
+    <div class="detail-header">
+        <label>Participants List</label> 
+        <button class="btn_excel" mat-raised-button style="background-color: #003782;" color="primary" (click)="exportTableToExcel()"><i class="las la-file-download"></i>Generate List</button>   
+    </div>   
+        <table id="app-table" class="table" >
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Student Number</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Gender</th>
+                    <th>Date Of Birth</th>
+                    <th>Email</th>
+                    <th>Cell Number</th>
+                    <th>Skills</th>
+                    <th>Faculty</th>
+                    <th>Specialization</th>
+                    <th>level</th>
+                    <th>Campus</th>
+                    <!--
+                    <th>Hobby</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                    -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <th>1</th>
+                    <td>215656322</td>
+                    <td>Nhlakanipho</td>
+                    <td>Makhaza</td>
+                    <td>Male</td>
+                    <td>1991/07/11</td>
+                    <td>nhlakanipho19sphelele@gmail.com</td>
+                    <td>0838486462</td>
+                    <td>Developer</td>
+                    <td>Software Development</td>
+                    <td>Software Developer</td>
+                    <td>3</td>
+                    <td>Sosha South</td>
+                    <!--
+                    <td>Programming</td>
+                    <td>Pending</td>
+                        <td>
+                            <button class="btn_accept" mat-raised-button style="background-color: #003782;" color="primary" (click)="getStatusAccepted"> Accept </button>
+                            <button class="btn_reject" mat-raised-button style="background-color: #ce1127;" color="primary" (click)="getStatusRejected"> Reject </button>
+                        </td>
+                    -->
+                </tr>
+                <tr >
+                    <th>2</th>
+                    <td>215656322</td>
+                    <td>Nhlakanipho</td>
+                    <td>Makhaza</td>
+                    <td>Male</td>
+                    <td>1991/07/11</td>
+                    <td>nhlakanipho19sphelele@gmail.com</td>
+                    <td>0838486462</td>
+                    <td>Developer</td>
+                    <td>Software Development</td>
+                    <td>Software Developer</td>
+                    <td>3</td>
+                    <td>Sosha South</td>
+                    <!--
+                    <td>Programming</td>
+                    <td>Pending</td>
+                        <td>
+                            <button class="btn_accept" mat-raised-button style="background-color: #003782;" color="primary"> Accept </button>
+                            <button class="btn_reject" mat-raised-button style="background-color: #ce1127;" color="primary"> Reject </button>
+                        </td>
+                    -->
+                </tr>
+                <tr >
+                    <th>3</th>
+                    <td>215656322</td>
+                    <td>Nhlakanipho</td>
+                    <td>Makhaza</td>
+                    <td>Male</td>
+                    <td>1991/07/11</td>
+                    <td>nhlakanipho19sphelele@gmail.com</td>
+                    <td>0838486462</td>
+                    <td>Developer</td>
+                    <td>Software Development</td>
+                    <td>Software Developer</td>
+                    <td>3</td>
+                    <td>Sosha South</td>
+                    <!--
+                    <td>Programming</td>
+                    <td>Pending</td>
+                        <td>
+                            <button class="btn_accept" mat-raised-button style="background-color: #003782;" color="primary"> Accept </button>
+                            <button class="btn_reject" mat-raised-button style="background-color: #ce1127;" color="primary"> Reject </button>
+                        </td>
+                    -->
+                </tr>
+                <tr >
+                    <th>4</th>
+                    <td>215656322</td>
+                    <td>Nhlakanipho</td>
+                    <td>Makhaza</td>
+                    <td>Male</td>
+                    <td>1991/07/11</td>
+                    <td>nhlakanipho19sphelele@gmail.com</td>
+                    <td>0838486462</td>
+                    <td>Developer</td>
+                    <td>Software Development</td>
+                    <td>Software Developer</td>
+                    <td>3</td>
+                    <td>Sosha South</td>
+                    <!--
+                    <td>Programming</td>
+                    <td>Pending</td>
+                        <td>
+                            <button class="btn_accept" mat-raised-button style="background-color: #003782;" color="primary" (click)="getStatusAccepted"> Accept </button>
+                            <button class="btn_reject" mat-raised-button style="background-color: #ce1127;" color="primary" (click)="getStatusRejected"> Reject </button>
+                        </td>
+                    -->
+                </tr>
+                <tr >
+                    <th>5</th>
+                    <td>215656322</td>
+                    <td>Nhlakanipho</td>
+                    <td>Makhaza</td>
+                    <td>Male</td>
+                    <td>1991/07/11</td>
+                    <td>nhlakanipho19sphelele@gmail.com</td>
+                    <td>0838486462</td>
+                    <td>Developer</td>
+                    <td>Software Development</td>
+                    <td>Software Developer</td>
+                    <td>3</td>
+                    <td>Sosha South</td>
+                    <!--
+                    <td>Programming</td>
+                    <td>Pending</td>
+                        <td>
+                            <button class="btn_accept" mat-raised-button style="background-color: #003782;" color="primary"> Accept </button>
+                            <button class="btn_reject" mat-raised-button style="background-color: #ce1127;" color="primary"> Reject </button>
+                        </td>
+                    -->
+                </tr>
+            </tbody>
+        </table>
+    </mat-card>
+</body>
+</html>

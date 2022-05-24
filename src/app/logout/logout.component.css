@@ -1,28 +1,25 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
 *{
-    height: 300px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
 }
-.body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+span{
+   position: absolute;
+   right: 42%;
+   margin-bottom: 190px;
+   cursor: pointer;
 }
-.yes{
-    font-size: larger;
-    padding: 12px 16px;
+.header h1{
+   position: relative;
+   margin-bottom: 20px;
+   color: rgb(117, 111, 111);
+   font-size: 22px;
 }
-.no{
-    font-size: larger;
-    padding: 12px 16px;
+.mat-dialog-content{
+   font-size: 20px;
+   margin-top: 5px;
 }
-.modal-container{
-    z-index: 100;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-}
-.modal-open{
-    display: flex;
+.btn_no{
+   right: 3%;
 }

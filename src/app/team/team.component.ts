@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';                                                                                                    
@@ -15,11 +16,13 @@ export class TeamComponent {
   openDialog() {
     this.dialog.open(DialogComponent, {
       width: '30%',
-      height: '60%'
+      height: '62%'
     });
   }
 
+ 
 
 
 
 }
+
