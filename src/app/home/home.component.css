@@ -3,56 +3,20 @@
   *{ margin: 0;
     padding: 0;
   }
-   .thenav img{
-  width: 35px;
-  margin-left: -40px;
-  margin-top: 2px;
-}
-.thenav{
-  display: flex;
-  justify-content:center ;
-  align-items: right;
-  background: #fff;
-  position: sticky;
-  top: 0;
+  .nav-links{
+    position: absolute;
+    background: #003782;
+    color:#fff;
+    height: 83vh;
+    width: 200px;
+    top:0;
+    left: -100%;
+    text-align: left;
+    z-index: 2;
 
-}
 
-.nav-links ul li{
-  display: block;
-  padding: 5px;
-
-}
-.nav-links{
-  position: absolute;
-  background: #003782;
-  color:#fff;
-  height: 70vh;
-  width: 200px;
-  top:0;
-  right: 0;
-  text-align: left;
-  z-index: 2;
-  display: none;
-}
-
-nav .las{
-  display: block;
-  color: #e6b012;
-  margin: 10px;
-  font-size: 23px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.thenav h1{
-
-  color: #003782;
-  font-weight: bold;
-  font-size: 15px;
-  text-align: center;
-}
-.nav-links ul li a{
+  }
+  .nav-links ul li a{
 
     text-decoration: none;
     color: #fff;
@@ -60,7 +24,43 @@ nav .las{
     padding: 8px 12px;
 
 }
+   .thenav img{
+  width: 35px;
+  margin-left: 1px;
+  margin-top: 2px;
+}
+.thenav h1{
 
+  color: #003782;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.nav-links ul li{
+  display: block;
+  padding: 5px;
+
+}
+
+#check:checked ~ .nav-links{
+  left: 0;
+}
+.checkbtn .las{
+  color: #e6b012;
+  float: right;
+  line-height: 80px;
+  font-size: 30px;
+  margin-top: -50px;
+  margin-right: 10px;
+}
+#check{
+  display: none;
+}
+.nav-links ul{
+  padding: 30px;
+}
 
 .slider{
 
@@ -366,9 +366,7 @@ transform:scale(1.1);
   margin-left: 30px;
   list-style: none;
 }
-.las{
-  display: none;
-}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
