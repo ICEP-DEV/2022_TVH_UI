@@ -1,26 +1,53 @@
-<app-sidebar></app-sidebar>
-<div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item>Expand</button>
-              <button mat-menu-item>Remove</button>
-            </mat-menu>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-
-  </mat-grid-list>
-</div>
+<app-sidebar></app-sidebar> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <title>Dashboard Home</title>
+</head>
+<body>
+    <section class="content">
+        <div class="content-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                            <h1>150</h1>
+                            <p>Daily Views</p>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-reg">
+                        <div class="inner">
+                            <h1>50</h1>
+                            <p>Registered Participants</p>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-user-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                            <h1>150</h1>
+                            <p>Visitors</p>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6"></div>
+            </div>
+        </div>
+    </section>
+ 
+</body>
+</html>

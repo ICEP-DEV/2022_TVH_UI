@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
   <title>The First Webpage</title>
-
 </head>
 <body>
   <section class="menu">
     <nav class="thenav" >
-
       <div class="nav-links"*ngIf="showMe">
-
         <a href=""><img src="../assets/tut-logo.png"></a>
          <h1>Tshwane varsity hackathon 2022</h1>
         <ul >
-          <li><a href="">Home</a></li>
+          <li><a href="home">Home</a></li>
           <li><a href="about">About</a></li>
-          <li><a href="about">Rules</a></li>
+          <li><a href="rules">Rules</a></li>
           <li><a href="public-annoucement">Announcements</a></li>
-          <li><a href="home">Gallery</a></li>
+          <li><a href="gallery">Gallery</a></li>
           <li><a href="public-rewards">Rewards</a></li>
           <li><a href="public-teams">Team</a></li>
-
         </ul>
-
       </div>
       <i class="las la-bars" (click)="theMenu()"></i>
     </nav>
   </section>
-
-
-
-
-
 
   <section class="the-animated-images">
     <div class="slider">
@@ -58,21 +47,21 @@
 
         </figure>
     </div>
-</section>
-<section>
-  <h2>Are you interested in hacking?</h2>
-</section>
-<section>
-  <div class="the-content">
-      <p>A social coding event that brings computer programmers and<br> other interested people together to improve upon or build a new program.</p>
-  </div>
-</section>
-<section>
-  <div class="parti-updates-btn">
-    <a target="_blank" href="registration-form"><button class="parti">Participate</button></a>
-    <a href="public-annoucement"><button class="latest">Lastest updates</button></a>
-  </div>
-</section>
+  </section>
+  <section>
+    <h2>Are you interested in hacking?</h2>
+  </section>
+  <section>
+    <div class="the-content">
+        <p>A social coding event that brings computer programmers and<br> other interested people together to improve upon or build a new program.</p>
+    </div>
+  </section>
+  <section>
+    <div class="parti-updates-btn">
+      <a target="_blank" href="registration-form"><button class="parti">Participate</button></a>
+      <a href="public-annoucement"><button class="latest">Lastest updates</button></a>
+    </div>
+  </section>
 
   <section class = "the-row">
     <div class="row">
@@ -122,9 +111,9 @@
 
     </div>
 
-  </div>
-   </section>
-   <section>
+    </div>
+  </section>
+  <section>
     <div class="horizontal-line"></div>
   </section>
  <section>
@@ -145,104 +134,98 @@
  </section>
  <section>
   <div class="hori-line"></div>
-</section>
- <section class="hack-themes">
-   <div class="hacking-themes">
-     <h1>Hacking Themes</h1>
-     <p>TVH is the multi-themed hacking event, meaning we accommodate different solutions accross different domains that affect communities in local through global scale. </p>
-   </div>
-   <div class="row1">
-    <div class="box1">
-        <h1 class="heading1">Health</h1>
+  </section>
+  <section class="hack-themes">
+    <div class="hacking-themes">
+      <h1>Hacking Themes</h1>
+      <p>TVH is the multi-themed hacking event, meaning we accommodate different solutions accross different domains that affect communities in local through global scale. </p>
+    </div>
+    <div class="row1">
+      <div class="box1">
+          <h1 class="heading1">Health</h1>
+          <ul>
+            <li>COVID-19</li>
+            <li>Medication</li>
+            <li>Business management system</li>
+          </ul>
+
+      </div>
+      <div class="box1">
+
+        <h1 class="heading1">Safety</h1>
         <ul>
-          <li>COVID-19</li>
-          <li>Medication</li>
+          <li>Campus safety</li>
+          <li>Abduction of children</li>
           <li>Business management system</li>
+        </ul>
+
+
+      </div>
+      <div class="box1">
+
+        <h1 class="heading1">Municipality service delivery</h1>
+        <ul>
+          <li>Energy</li>
+          <li>Water</li>
+          <li>Waste Management</li>
+          <li>Revenue collection</li>
+          <li>Transport and mobility</li>
+        </ul>
+
+
+      </div>
+      <div class="box1">
+        <h1 class="heading1">Education</h1>
+        <ul>
+          <li>Energy</li>
+          <li>Water</li>
         </ul>
 
     </div>
     <div class="box1">
-
-      <h1 class="heading1">Safety</h1>
+      <h1 class="heading1">Smart city</h1>
       <ul>
-        <li>Campus safety</li>
-        <li>Abduction of children</li>
-        <li>Business management system</li>
+          <li>Financial technology(FINTECH)</li>
+          <li>Data science</li>
+          <li>IOT</li>
+          <li>Township economy</li>
       </ul>
-
-
-    </div>
-    <div class="box1">
-
-      <h1 class="heading1">Municipality service delivery</h1>
-      <ul>
-        <li>Energy</li>
-        <li>Water</li>
-        <li>Waste Management</li>
-        <li>Revenue collection</li>
-        <li>Transport and mobility</li>
-      </ul>
-
-
-    </div>
-    <div class="box1">
-      <h1 class="heading1">Education</h1>
-      <ul>
-        <li>Energy</li>
-        <li>Water</li>
-      </ul>
-
   </div>
-  <div class="box1">
-    <h1 class="heading1">Smart city</h1>
-    <ul>
-        <li>Financial technology(FINTECH)</li>
-        <li>Data science</li>
-        <li>IOT</li>
-        <li>Township economy</li>
-    </ul>
-
-
-</div>
-
-</div>
-
+  </div>
  </section>
  <section>
-
  </section>
  <section>
   <div class="our-partners">
     <h1>Our <span>Partners</span></h1>
   </div>
 
-<div class="row2">
-  <div class="box2">
-    <img src="../assets/logo1.png">
+  <div class="row2">
+    <div class="box2">
+      <img src="../assets/logo1.png">
+    </div>
+    <div class="box2">
+      <img src="../assets/logo2.png">
+    </div>
+    <div class="box2">
+      <img src="../assets/logo3.png">
+    </div>
+    <div class="box2">
+      <img src="../assets/logo4.png">
+    </div>
+    <div class="box2">
+      <img src="../assets/logo5.png">
+    </div>
+    <div class="box2">
+      <img src="../assets/logo6.png">
+    </div>
+    <div class="box2">
+      <img src="../assets/logo7.png">
+    </div>
+    <div class="box2">
+      <img src="../assets/logo8.png">
   </div>
-  <div class="box2">
-    <img src="../assets/logo2.png">
   </div>
-  <div class="box2">
-    <img src="../assets/logo3.png">
-  </div>
-  <div class="box2">
-    <img src="../assets/logo4.png">
-  </div>
-  <div class="box2">
-    <img src="../assets/logo5.png">
-  </div>
-  <div class="box2">
-    <img src="../assets/logo6.png">
-  </div>
-  <div class="box2">
-    <img src="../assets/logo7.png">
-  </div>
-  <div class="box2">
-    <img src="../assets/logo8.png">
-  </div>
-</div>
-
  </section>
  <app-footer></app-footer>
 </body>

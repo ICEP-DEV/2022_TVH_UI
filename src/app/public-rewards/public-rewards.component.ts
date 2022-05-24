@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PublicRewardsComponent implements OnInit {
 
   constructor() { }
-  
+
   showMe:boolean = true
 
   ngOnInit(): void {

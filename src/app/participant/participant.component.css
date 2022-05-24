@@ -14,26 +14,37 @@
     text-align: center;
     margin-top: 1px;
 }
-.table thead tr th{
-    color: black;
+.table thead tr{
+    background-color: rgb(158, 155, 155);
+    color: #fff;
     text-align: center;
     font-weight: bolder;
-    font-size: 12px;
+    font-size: 13px;
 }
 .table thead th,
 .table tbody td{
-    padding: 5px 1px; 
+    padding: 7px 3px; 
 }
+.table tbody tr {
+    border-bottom: 1px solid #dddd;
+}
+.table tbody tr:nth-of-type(even) {
+    background-color: rgb(233, 233, 233);
+    color: #767979;
+}
+
 .detail-header label{
     font-size: 25px;
     font-weight: 100;
 }
+/*
 .btn_accept{
     right: 3px;
 }
 .btn_reject{
     left: 3px;
 }
+*/
 .la-file-download{
     font-size: 25px;
     padding-right: 7px;
