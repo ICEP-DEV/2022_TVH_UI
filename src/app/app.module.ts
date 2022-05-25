@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule  } from '@angular/platform-browser/animations'
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -49,6 +50,10 @@ import { CKEditorModule } from 'ng2-ckeditor';
 import { A11yModule } from '@angular/cdk/a11y';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { CanvasDomModule } from 'angular-canvas';
+
 
 
 
@@ -104,8 +109,11 @@ import { MatIconModule } from '@angular/material/icon';
     CKEditorModule,
     A11yModule,
     MatDialogModule,
-    MatIconModule
-
+    MatIconModule,
+    MatDatepickerModule,
+    MatMomentDateModule,
+    CanvasDomModule,
+    NoopAnimationsModule
   ],
   providers: [
 
