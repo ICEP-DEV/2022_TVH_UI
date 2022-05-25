@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule  } from '@angular/platform-browser/animations'
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -15,6 +16,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ParticipantComponent } from './participant/participant.component';
+import { AnnouncementComponent } from './announcement/announcement.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
@@ -26,7 +28,6 @@ import { FooterComponent } from './footer/footer.component';
 import { PublicRewardsComponent } from './public-rewards/public-rewards.component';
 import { RulesComponent } from './rules/rules.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
-import { AnnouncementComponent } from './announcement/announcement.component';
 
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -49,6 +50,10 @@ import { CKEditorModule } from 'ng2-ckeditor';
 import { A11yModule } from '@angular/cdk/a11y';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { CanvasDomModule } from 'angular-canvas';
+
 
 
 
@@ -65,6 +70,7 @@ import { MatIconModule } from '@angular/material/icon';
     SignUpComponent,
     LayoutComponent,
     ParticipantComponent,
+    AnnouncementComponent,
     DashboardComponent,
     SidebarComponent,
     PublicAnnoucementComponent,
@@ -74,8 +80,7 @@ import { MatIconModule } from '@angular/material/icon';
     FooterComponent,
     PublicRewardsComponent,
     RulesComponent,
-    AdminHomeComponent,
-    AnnouncementComponent
+    AdminHomeComponent
 
   ],
   imports: [
@@ -104,8 +109,11 @@ import { MatIconModule } from '@angular/material/icon';
     CKEditorModule,
     A11yModule,
     MatDialogModule,
-    MatIconModule
-
+    MatIconModule,
+    MatDatepickerModule,
+    MatMomentDateModule,
+    CanvasDomModule,
+    NoopAnimationsModule
   ],
   providers: [
 

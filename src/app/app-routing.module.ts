@@ -11,13 +11,13 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ParticipantComponent } from './participant/participant.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AnnouncementComponent } from './announcement/announcement.component';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
 import { TeamComponent } from './team/team.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { PublicRewardsComponent } from './public-rewards/public-rewards.component';
 import { RulesComponent } from './rules/rules.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
-import { AnnouncementComponent } from './announcement/announcement.component';
 
 
 const routes: Routes = [
@@ -32,13 +32,13 @@ const routes: Routes = [
   {path: "layout", component:LayoutComponent},
   {path: "participant", component:ParticipantComponent},
   {path: "dashboard", component:DashboardComponent},
+  {path: "announcement", component:AnnouncementComponent},
   {path: "public-annoucement", component:PublicAnnoucementComponent},
   {path: "team", component:TeamComponent},
   {path: "dialog", component:DialogComponent},
   {path: "public-rewards", component: PublicRewardsComponent},
   {path: "rules", component: RulesComponent},
-  {path: "admin-home", component: AdminHomeComponent},
-  {path: "announcement", component: AnnouncementComponent}
+  {path: "admin-home", component: AdminHomeComponent}
 ];
 
 @NgModule({

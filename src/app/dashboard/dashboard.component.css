@@ -14,8 +14,7 @@ body{
 }
 .content {
   margin: 40px;
-  left: 10%;
-  justify-content: space-between;
+  right: 15%;
 }
 .container-fluid{
   width: 100%;
@@ -29,6 +28,7 @@ body{
   flex-wrap: wrap;
   margin-right: 7.5px;
   margin-left: 7.5px;
+  justify-content: space-between;
 }
 .col-lg-3{
   position: relative;
@@ -51,6 +51,7 @@ body{
   margin-bottom: 20px;
   position: relative;
   height: 125px;
+  width: 460px;
 }
 .bg-info {
   color: #fff!important;
@@ -102,15 +103,130 @@ body{
   color: #fff;
   background-color: #f7e582!important;
 }
+.demo-inline-calendar-card {
+  width: 300px;
+}
+.col-md-6 .col-sm-12{
+    position: relative;
+    min-height: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-lg-3 {
+  width: 90%;
+  position: relative;
+  min-height: 600px;
+  padding-left: 90px;
+  padding-right: 1px;
+  max-width: 95%;
+}
+.dark-brown[_ngcontent-jbo-c8] {
+  background-color: #deb887;
+  color: #fff;
+  width: 30%;
+  border-radius: 0.28rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+}
+.widget.panel {
+  overflow: hidden;
+}
+.widget {
+  margin-bottom: 20px;
+  border: 0;
+}
+.row {
+  display: flex!important;
+  width: 100%;
+  flex-wrap:nowrap;
+  margin-left: -19px;
+  margin-right: -19px;
+  height: 126px;
+  border-radius: 0.50rem;
+    
+}
+.brown[_ngcontent-jbo-c8] {
+  background-color: brown;
+  color: #fff;
+  width: 20%;
+}
+.row-table>[class*=col-] {
+  display: table-cell;
+  float: none;
+  table-layout: fixed;
+  vertical-align: middle;
+}
+.text-sm {
+  font-size: 20px;
+}
+.pv-lg {
+  padding-bottom: 15px!important;
+  padding-top: 15px!important;
+}
+.col-xs-4 {
+  width: 5%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.text-center {
+  text-align: center!important;
+}
+.col-xs-8 {
+  width: 40%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.mt0 {
+  margin-top: 0!important;
+}
+[now] {
+  display: inline-block;
+}
+.h2 {
+  font-size: 30px;
+  margin-bottom: 10.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.1;
+  color: inherit;
+}
+.text-uppercase {
+  text-transform: uppercase!important;
+  font-size: 20px;
+}
+.text-muted {
+  color: #82888d!important;
+}
+.row:after {
+  clear: both;
+  content: " ";
+  display: flex;
+}
+.icon-cal{
+  position: relative;
+  left: 15%;
+  font-size: 90px;
+  color: rgba(0,0,0,.15);
+  bottom: 10px;
+}
+.demo-inline-calendar-card {
+  position: relative;
+  left: 74%;
+  width: 452px;
+  border-radius: 0.28rem;
+  box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+  margin-top: 5%;
+}
+.card-primary.card-outline {
+  border-top: 3px solid #007bff;
+}
 .card {
   box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
   margin-bottom: 1rem;
-}
-.card {
   position: relative;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
@@ -126,6 +242,7 @@ body{
   position: relative;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+  margin-bottom: 0;
 }
 .card-title {
   float: left;
@@ -133,193 +250,31 @@ body{
   font-weight: 400;
   margin: 0;
 }
-.mr-1 {
-  margin-right: 0.25rem!important;
-}
-.ion{
-    display: inline-block;
-    font-family: "Ionicons";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    text-rendering: auto;
-    line-height: 1;
-}
 .card-header>.card-tools {
   float: right;
   margin-right: -0.625rem;
 }
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.btn-tool {
+  background-color: transparent;
+  color: #adb5bd;
+  font-size: .875rem;
+  margin: -0.75rem 0;
+  padding: 0.25rem 0.5rem;
+}
+button, select {
+  text-transform: none;
+}
+button, input {
+  overflow: visible;
+}
 .card-body {
-  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
 }
-element.style {
-    cursor: move;
+canvas[Attributes] {
+  aspect-ratio: auto 332 / 300;
 }
-.card-header:first-child {
-    border-radius: calc(.25rem - 0) calc(.25rem - 0) 0 0;
-}
-.card-header {
-    background-color: transparent;
-    border-bottom: 1px solid rgba(0,0,0,.125);
-    padding: 0.75rem 1.25rem;
-    position: relative;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-}
-.border-0 {
-    border: 0!important;
-}
-.las {
-  font-family: Arial, Helvetica, sans-serif;
-}
-.las {
-  font-weight: 400;
-}
-.la {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-.btn-group, .btn-group-vertical {
-  position: relative;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: middle;
-}
-.btn-group>.btn {
-  position: relative;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-.dropdown-toggle {
-  white-space: nowrap;
-}
-.btn-sm {
-  padding: 0.25rem 0.5rem;
-  font-size: .875rem;
-  line-height: 1.5;
-  border-radius: 0.2rem;
-}
-.btn-success {
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
-  box-shadow: none;
-}
-.pt-0 {
-  padding-top: 0!important;
-}
-.bootstrap-datetimepicker-widget {
-  list-style: none;
-}
-.bootstrap-datetimepicker-widget .list-unstyled {
-  margin: 0;
-}
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-.bootstrap-datetimepicker-widget table {
-  width: 100%;
-  margin: 0;
-}
-table {
-  display: table;
-  text-indent: initial;
-  border-spacing: 2px;
-  border-color: grey;
-  background-color: transparent;
-  border-collapse: collapse;
-}
-.bootstrap-datetimepicker-widget table th {
-  text-align: center;
-  border-radius: 0.25rem;
-}
-.table-sm td, 
-.table-sm th {
-  padding: 0.3rem;
-}
-th {
-  display: table-cell;
-}
-.card.bg-gradient-success .bootstrap-datetimepicker-widget .table th{
-  border: none;
-}
-.bootstrap-datetimepicker-widget table thead tr:first-child th {
-  cursor: pointer;
-}
-.bootstrap-datetimepicker-widget table th.picker-switch {
-  width: 145px;
-}
-.bootstrap-datetimepicker-widget .picker-switch {
-  text-align: center;
-}
-.table thead th {
-  vertical-align: bottom;
-}
-.bootstrap-datetimepicker-widget table th {
-  height: 20px;
-  line-height: 20px;
-  width: 20px;
-  text-align: center;
-  border-radius: 0.25rem;
-}
-tr {
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
-}
-thead {
-  display: table-header-group;
-  vertical-align: middle;
-  border-color: inherit;
-}
-.bootstrap-datetimepicker-widget table th.picker-switch {
-  width: 145px;
-}
-.bootstrap-datetimepicker-widget .picker-switch {
-  text-align: center;
-}
-.bootstrap-datetimepicker-widget table td {
-  height: 54px;
-  line-height: 54px;
-  width: 54px;
-  text-align: center;
-  border-radius: 0.25rem;
-}
-.bootstrap-datetimepicker-widget table td span {
-  display: inline-block;
-  width: 54px;
-  height: 54px;
-  line-height: 54px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  cursor: pointer;
-  border-radius: 0.25rem;
-}
-.bootstrap-datetimepicker-widget table td span.old {
-  color: #6c757d;
-}
-.bootstrap-datetimepicker-widget table td span {
-  display: inline-block;
-  width: 54px;
-  height: 54px;
-  line-height: 54px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  cursor: pointer;
-  border-radius: 0.25rem;
-}
-
