@@ -11,14 +11,11 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
 
-   showMe:boolean = true
+
 
   ngOnInit(): void {
 
   }
-  theMenu()
-  {
-    this.showMe=!this.showMe
-  }
+
 
 }
