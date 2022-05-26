@@ -61,7 +61,7 @@ const routes: Routes = [
   {path:"public-annoucement",component:PublicAnnoucementComponent},
   {path:"footer",component:FooterComponent},
   {path:"dialog",component:DialogComponent},
-  {path:"dialog/:id",component:DialogComponent}, ////for editing team
+  {path:"dialog/edit/:id",component:DialogComponent}, ////for editing team
   {path:"team",component:TeamComponent},
   {path:"teams",component:TeamsComponent},
   {path:"rules",component:RulesComponent},

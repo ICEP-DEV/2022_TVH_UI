@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import {ActivatedRoute} from '@angular/router'
 import {ApiserviceService} from '../apiservice.service';
 import Swal from 'sweetalert2';
+
 //import { constants } from 'buffer';
 
 @Component({
@@ -50,8 +51,10 @@ export class DialogComponent implements OnInit {
     
 
       this.router.paramMap.subscribe(params =>{
-
+        
+        
         const teamId = params.get('id');
+        
 
         if(teamId)
         {
@@ -60,6 +63,14 @@ export class DialogComponent implements OnInit {
       })
 
 
+  }
+
+  getTeam(id:any)
+  {
+    this.service.getSpecTeam(id).subscribe(
+      (teams: any) => this.editTeam(teams),
+      (err:any) => console.log(err)
+    );
   }
 
    leaderForm !: FormGroup;
@@ -88,38 +99,32 @@ export class DialogComponent implements OnInit {
 
 
   ///for editing team
-  getTeam(id:any)
-  {
+  // getTeam(id:any)
+  // {
 
-    this.service.getSpecTeam(id).subscribe(params =>{
+  //   this.service.getSpecTeam(id).subscribe(params =>{
 
-      const id = +params.get('id');
+  //     const id = +params.get('id');
 
-      if(id)
-      {
-        this.getTeams(id)
-      }
-    });
+  //     if(id)
+  //     {
+  //       this.getTeams(id)
+  //     }
+  //   });
 
-  }
+  // }
 
-  getTeams(id:number)
-  {
-    this.service.getSpecTeam(id).subscribe(
-      (team: any) => this.editTeam(team),
-      (err:any) => console.log(err)
-    );
-  }
+
    
-  editTeam(team: any)
+  editTeam(teams: any)
   {
     this.leaderForm.patchValue({
 
-      name: team.name,
-      surname: team.surname,
-      occupation: team.occupation,
-      description: team.description,
-      category: team.category
+      name: teams.name,
+      surname: teams.surname,
+      occupation: teams.occupation,
+      description: teams.description,
+      category: teams.category,
     })
   }
   

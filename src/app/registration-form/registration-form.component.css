@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
-@media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) {
   *{ margin: 0;
     padding: 0;
   }
@@ -259,10 +259,10 @@ nav .las{
     border-radius: 3px;
     color: #fff;
 
-}
+} 
 
-}
-@media only screen and (min-width: 768px) {
+} 
+ @media only screen and (min-width: 768px) {
   *{ margin: 0;
     padding: 0;
   }
@@ -366,8 +366,8 @@ nav .las{
     display: none;
   }
 
-}
-@media only screen and (min-width: 992px) {
+} 
+ @media only screen and (min-width: 992px) {
   *{ margin: 0;
     padding: 0;
   }

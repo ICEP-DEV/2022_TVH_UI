@@ -36,10 +36,6 @@ export class TeamsComponent implements OnInit {
 
   team:any;
 
-
-
-
-
   ngOnInit(): void {
 
     this.service.getTeam().subscribe((res) =>{
@@ -153,13 +149,6 @@ deletID(id:any)
           }
         })
 
-
-
-
-
-
-
-
       }
 
 
@@ -170,9 +159,9 @@ deletID(id:any)
 
 //edit button for teams
 
-editButtonClick(teamId:number)
+editButtonClick(teamId:any)
 {
-  this.route.navigate(['/edit', teamId]);
+  this.route.navigate(['/dialog/edit', teamId]);
 
   console.log("check here");
 

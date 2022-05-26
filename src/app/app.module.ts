@@ -52,6 +52,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { PublicGalleryComponent } from './public-gallery/public-gallery.component';
 import { EditdialogComponent } from './editdialog/editdialog.component';
 import { AnnouncementlistComponent } from './announcementlist/announcementlist.component';
+import { NoopAnimationsModule  } from '@angular/platform-browser/animations';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
 
 
 
@@ -90,6 +93,7 @@ import { AnnouncementlistComponent } from './announcementlist/announcementlist.c
     EditdialogComponent,
     AnnouncementlistComponent,
     
+    
  
     
     
@@ -118,7 +122,12 @@ import { AnnouncementlistComponent } from './announcementlist/announcementlist.c
     MatButtonModule,
     MatInputModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    NoopAnimationsModule,
+    MatDatepickerModule,
+    MatMomentDateModule
+ 
+
 
     
     

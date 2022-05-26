@@ -1,182 +1,66 @@
+<app-sidebar></app-sidebar> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <title>Dashboard Home</title>
 </head>
-
 <body>
-    <input type="checkbox" name="" id="sidebar-toggle">
-    <div class="sidebar">
-        <div class="sidebar-main">
-            
-            <div class="sidebar-user">
-                 <img src="../assets/profile.jpg" width="60px" alt="">
-                    <div>
-                         <h3>Admin Dashboard</h3>
-                        
+    <section class="content">
+        <div class="content-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-info">
+                        <div class="inner" *ngFor="let us of readDat">
+                            <h1>{{us.number}}</h1>
+                            <p>Teams</p>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-eye"></i>
+                        </div>
                     </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-reg">
+                        <div class="inner" *ngFor="let us of readData">
+                            <h1>{{us.number}}</h1>
+                            <p>Registered Participants</p>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-user-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div _ngcontent-jbo-c8="" class="col-lg-3 col-md-6 col-sm-12">
+                    <div _ngcontent-jbo-c8="" class="panel widget dark-brown">
+                        <div _ngcontent-jbo-c8="" class="row row-table">
+                            <div _ngcontent-jbo-c8="" class="col-xs-4 text-center brown pv-lg">
+                                <span _ngcontent-jbo-c8="" class="text-sm" format="MMMM" now=""> May </span><br _ngcontent-jbo-c8="">
+                                <span _ngcontent-jbo-c8="" class="h2 mt0" format="D" now=""> 25 </span>
+                            </div>
+                            <div _ngcontent-jbo-c8="" class="col-xs-8 pv-lg">
+                                <span _ngcontent-jbo-c8="" class="text-uppercase" format="dddd" now=""> Wednesday </span><br _ngcontent-jbo-c8="">
+                                <span _ngcontent-jbo-c8="" class="h2 mt0" format="h:mm" now=""> 8:53 </span>
+                                <span _ngcontent-jbo-c8="" class="text-muted text-sm" format="a" now=""> am </span>
+                            </div>
+                            <div _ngcontent-jbo-c8="" class="icon-cal">
+                                <i class="las la-calendar-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="sidebar-menu">
-                <ul>
-                    <li>
-                        <a href="adminboard">
-                            <span class="icon"></span>
-                            <i class="las la-home"></i>
-                            <span class="title">Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="participants">
-                            <span class="icon"></span>
-                            <i class="las la-user-friends"></i>
-                            <span class="title">Participants</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon"></span>
-                            <i class="las la-bullhorn"></i>
-                            <span class="title">Announcements</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon"></span>
-                            <i class="las la-image"></i>
-                            <span class="title">Gallery</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon"></span>
-                            <i class="las la-gift"></i>
-                            <span class="title">Rewards</span>
-                        </a>
-                    </li>
-                </ul>
-            </div> 
         </div>
-    </div>
+    </section>
 
-    <div class="main-content">
-        <header>
-            <div class="menu-toggle"> 
-                    <label for="sidebar-toggle">
-                        <i class="las la-bars"></i>
-                        <span class="dashboard">Dashboard</span>
-                    </label>
-            </div>
+    <section>
+        <mat-card class="demo-inline-calendar-card">
+            <mat-calendar></mat-calendar>
+        </mat-card>
+    </section>
 
-            <div class="header-icons">
-                <i class="las la-search"></i>
-                <input type="search" placeholder="Search here"/>
-            </div>
-
-            <div class="content-area">
-                <div class="notification">
-                  
-                </div>
-            </div>
-
-            
-             <div class="but-log">
-                <i class="las la-sign-out-alt"></i>
-                <button class="log-icon" > Logout</button>
-            </div>
-        
-
-        </header>
-        <main>
-            <br>
-            <div class="left" >
-                <ul class="breadcrumb">
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li><i class="las la-chevron-right"></i></li>
-                    <li>
-                        <a class="active" href="#">Home</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="cards">
-                <div class="card-single">
-                    <div>
-                        <h1>5</h1>
-                        <span>Tasks</span>
-                    </div>
-                    <div class="las-icon">
-                        <i class="las la-clipboard-list"></i>
-                    </div>
-                </div>
-
-                <div class="card-single">
-                    <div>
-                        <h1>3</h1>
-                        <span>Events</span>
-                    </div>
-                    <div class="las-icon">
-                        <i class="las la-newspaper"></i>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-
-            <div class="card-detail">
-                <div class="detail-header">
-                    <h4>Applicants List</h4>
-                    <button (click)="exportTableToExcel()" ><i class="las la-share-square"></i>Excel</button>   
-                </div>   
-                    <table id="app-table" class="table">
-                        <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Name</th>
-                                <th>Surname</th>
-                                <th>Gender</th>
-                                <th>Date Of Birth</th>
-                                <th>Email</th>
-                                <th>Institution</th>
-                                <th>Skills</th>
-                                <th>Academic Record</th>
-                                <th>Status</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr *ngFor="let us of readData">
-                                <th>{{us.id}}</th>
-                                <td>{{us.fullName}}</td>
-                                <td>{{us.surname}}</td>
-                                <td>{{us.gender}}</td>
-                                <td>{{us.dateOfBirth}}</td>
-                                <td>{{us.emailAddress}}</td>
-                                <td>{{us.institution}}</td>
-                                <td>{{us.skills}}</td>
-                                <td>{{us.academicRecord}}</td>
-                                <td>{{us.status}}</td>
-                                <td>
-
-                                   <diV>
-                                       <button (click)="getStatusAccepted(us)" class="accept">Accept</button>
-                                    </diV>
-                                   <diV>
-                                       <button (click)="getStatusRejected(us)" class="reject">Reject</button>
-                                    </diV>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-            </div>
-        </main>
-    </div>
 
 </body>
 </html>

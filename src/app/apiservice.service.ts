@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Announcements } from './interfaces/announcements';
+import { TeamsComponent } from './teams/teams.component';
 
 
 
@@ -17,31 +18,33 @@ export class ApiserviceService {
 
   ////connection for frontend and backend
 
-    apiUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/login'; //Adminlogin
+    apiUrl = 'http://localhost:9002/login'; //Adminlogin
 
-    apeUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/registrations'; ///userFormRegistration
+    apeUrl = 'http://localhost:9002/registrations'; ///userFormRegistration
 
-    apqUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/adminLoadFile'; //admin View Data From Database
-
-
-    apwUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/noticeLoadFile'; //Notice display Data From Database
-    orgUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/selectOrganiser'; //Teams display Data From Database
-    volUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/selectVolunteer'; //Volunteer display Data From Database
-    mentUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/selectMentor'; //Mentor display Data From Database
-    orgTeUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/selectOrgTeam'; //OrgTeam display Data From Database
-    teamUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/selectTeam'; //Team display Data From Database
+    apqUrl = 'http://localhost:9002/adminLoadFile'; //admin View Data From Database
 
 
-    apaUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/signUp'; /// Signup for users
+    apwUrl = 'http://localhost:9002/noticeLoadFile'; //Notice display Data From Database
+    appUrl = 'http://localhost:9002/countApp'; //Apllication counts 
+    teamsUrl = 'http://localhost:9002/countTeam'; //Team counts 
+    orgUrl = 'http://localhost:9002/selectOrganiser'; //Teams display Data From Database
+    volUrl = 'http://localhost:9002/selectVolunteer'; //Volunteer display Data From Database
+    mentUrl = 'http://localhost:9002/selectMentor'; //Mentor display Data From Database
+    orgTeUrl = 'http://localhost:9002/selectOrgTeam'; //OrgTeam display Data From Database
+    teamUrl = 'http://localhost:9002/selectTeam'; //Team display Data From Database
 
-    apkUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/userLogin'; /// Users login
 
-    apmUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/notice'; /// announcement
+    apaUrl = 'http://localhost:9002/signUp'; /// Signup for users
 
-    uploadUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/uploadTeam '; ///uploadTeams
-    deletUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/deleteMember'; ///DeleteTeams
-    delantUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/deleteAnnouncement'; ///DeleteAnnouncement
-    specTeaUrl = 'https://4xazztqw3p.us-east-1.awsapprunner.com/viewTeamMember'; ///select specific team using id 
+    apkUrl = 'http://localhost:9002/userLogin'; /// Users login
+
+    apmUrl = 'http://localhost:9002/notice'; /// announcement
+
+    uploadUrl = 'http://localhost:9002/uploadTeam '; ///uploadTeams
+    deletUrl = 'http://localhost:9002/deleteMember'; ///DeleteTeams
+    delantUrl = 'http://localhost:9002/deleteAnnouncement'; ///DeleteAnnouncement
+    specTeaUrl = 'http://localhost:9002/viewTeamMember'; ///select specific team using id 
 
 
 
@@ -73,6 +76,18 @@ export class ApiserviceService {
     {
           return this._http.get<Announcements>(`${this.apwUrl}`);
     }
+
+  ///Count applications
+    getCountApp():Observable<any>
+    {
+          return this._http.get<any>(`${this.appUrl}`);
+    }
+
+  ///Count teams
+  getCountTeams():Observable<any>
+  {
+        return this._http.get<any>(`${this.teamsUrl}`);
+  }
 //--------------------------------------------------TEAMS---------------------------------//
     ///Organiser
     getOrginiser():Observable<any>
@@ -154,7 +169,7 @@ export class ApiserviceService {
     //select specific team
     getSpecTeam(id:any):Observable<any>
     {
-        let ide = id;
-          return this._http.get<any>(`${this.apwUrl}/${ide}`);
+        
+          return this._http.get<any>(`${this.specTeaUrl}/${id}`);
     }
 }
