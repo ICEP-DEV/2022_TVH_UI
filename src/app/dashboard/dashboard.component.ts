@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -6,33 +6,17 @@ import { Component } from '@angular/core';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
 
-  constructor() {}
+  constructor() { }
+  ngOnInit(): void {
+    
+
+  }
+
+
 
   selected!: Date | null;
 
-  function () {    
-    /* DONUT CHART
-    */
-
-   var donutData = [
-     {
-       label: 'Series2',
-       data : 30,
-       color: '#3c8dbc'
-     },
-     {
-       label: 'Series3',
-       data : 20,
-       color: '#0073b7'
-     },
-     {
-       label: 'Series4',
-       data : 50,
-       color: '#00c0ef',
-     },
-   ]
-  }
 
 }
