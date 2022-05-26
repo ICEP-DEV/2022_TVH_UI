@@ -364,6 +364,24 @@ transform:scale(1.1);
   margin-left: 30px;
   list-style: none;
 }
+.posters{
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  margin-left: 125px;
+
+}
+.poster1 img{
+  width: 190px;
+  box-shadow: 0 0 10px #e6b012;
+
+}
+.poster2 img{
+  width: 180px;
+  box-shadow: 0 0 10px #e6b012;
+}
 
 }
 
@@ -434,6 +452,25 @@ h2{
     color:#fff;
     font-size: 63px;
 }
+.posters{
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  margin-left: 125px;
+
+}
+.poster1 img{
+  width: 190px;
+  box-shadow: 0 0 10px #e6b012;
+
+}
+.poster2 img{
+  width: 180px;
+  box-shadow: 0 0 10px #e6b012;
+}
+
 .the-content p{
   left: 25%;
   transform: translate(-50%,-50%);
@@ -784,7 +821,24 @@ transform:scale(1.1);
 #check{
   display: none;
 }
+.posters{
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  margin-left: 170px;
 
+}
+.poster1 img{
+  width: 300px;
+  box-shadow: 0 0 10px #e6b012;
+
+}
+.poster2 img{
+  width: 350px;
+  box-shadow: 0 0 10px #e6b012;
+}
 .slider{
 
   overflow: hidden;
@@ -1086,9 +1140,11 @@ transform:scale(1.1);
   display: block;
   margin-left: 22px;
 }
-.las{
+#check{
   display: none;
 }
+
+
 
 }
 
@@ -1449,6 +1505,26 @@ transform:scale(1.1);
 }
 .las{
   display: none;
+}
+
+.posters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 20px;
+
+}
+.poster1 img{
+  width:450px;
+  margin-left: 240px;
+  box-shadow: 0 0 10px #e6b012;
+
+}
+.poster2 img{
+  width: 350px;
+  margin-right: 250px;
+  box-shadow: 0 0 10px #e6b012;
 }
 
 }
@@ -1817,6 +1893,28 @@ transform:scale(1.1);
 }
 #check{
   display: none;
+}
+.checkbtn{
+  display: none;
+}
+.posters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 20px;
+
+}
+.poster1 img{
+  width:400px;
+  margin-left: 190px;
+  box-shadow: 0 0 10px #e6b012;
+
+}
+.poster2 img{
+  width: 300px;
+  margin-right: 260px;
+  box-shadow: 0 0 10px #e6b012;
 }
 
 }
