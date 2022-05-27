@@ -1,2 +1,113 @@
-<app-sidebar></app-sidebar>
-<p>gallery works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <title>Public Gallery</title>
+
+</head>
+<body>
+  <section class="menu">
+    <nav class="thenav" >
+      <a href=""><img src="../assets/tut-logo.png"></a>
+      <h1>Tshwane varsity hackathon 2022</h1>
+      <div class="nav-links">
+        <ul >
+          <li><a href="">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="rules">Rules</a></li>
+          <li><a href="public-annoucement">Announcements</a></li>
+          <li><a href="public-gallery">Gallery</a></li>
+          <li><a href="rewards">Rewards</a></li>
+          <li><a href="public-teams">Team</a></li>
+
+        </ul>
+
+      </div>
+    </nav>
+  </section>
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+  
+<div class="container0">
+  <p>The future is a continuous construct of every now and before. Have a look at our <br>
+    before and let us create our now together at the Tshwane Varsity Hackathon<br> 2022</p>
+</div>
+<iframe width="500" height="315"
+src="https://www.youtube.com/embed/k_4bi7P6AM?autoplay=1&mute=1"></iframe>
+
+
+<div class="container1">
+  <p> 2019</p>
+</div>
+  
+    <div class="grid-container">
+      <img src="../assets/x1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="grid-container">
+      <img src="../assets/x17.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="grid-container">
+      <img src="../assets/x2.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div><br>
+
+    <div class="grid-container">
+      <img src="../assets/x29.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="grid-container">
+      <img src="../assets/x10.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="grid-container">
+      <img src="../assets/x25.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div><br>
+
+    <a href="https://www.flickr.com/photos/kasicat/albums/72157702195281405" class="button">More 2019 Hackathon Images</a><br>
+
+    <div class="container2">
+      <p> 2018</p>
+    </div>
+      
+        <div class="grid-container1">
+          <img src="../assets/x12.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="grid-container1">
+          <img src="../assets/x27.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="grid-container1">
+          <img src="../assets/x11.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        </div><br>
+    
+        <div class="grid-container1">
+          <img src="../assets/x8.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="grid-container1">
+          <img src="../assets/x4.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="grid-container1">
+          <img src="../assets/x7.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        </div><br>
+    
+        <a href="https://www.flickr.com/photos/kasicat/albums/72157702195281405" class="button1">More 2018 Hackathon Images</a><br>
+    
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+
+
+<router-outlet></router-outlet>
+

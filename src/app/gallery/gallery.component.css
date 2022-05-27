@@ -1,0 +1,243 @@
+@media only screen and (min-width: 600px) {
+    *{ margin: 0;
+      padding: 0;
+    }
+    .thenav{
+      display: flex;
+      justify-content:center ;
+      align-items: right;
+      background: #fff;
+      position: sticky;
+      top: 0;
+  
+  }
+  .thenav img{
+    width: 70px;
+    margin-left: -180px;
+    margin-top: 5px;
+  }
+  .nav-links ul{
+      display: flex;
+      list-style: none;
+      margin: 20px 0px;
+  }
+  .nav-links ul li{
+      font-family: Arial;
+      font-size: 18px;
+      position: relative;
+      right: -28%;
+  
+  }
+  .thenav h1{
+    color: #003782;
+    margin-top: 15px;
+    position: relative;
+    font-weight: bold;
+    left: -8%;
+  }
+  .nav-links ul li a{
+      text-decoration: none;
+      color: #003782;
+      padding: 8px 12px;
+      transition: all .5s ease;
+  }
+  .nav-links ul li a:hover{
+      background-color: #003782;
+      border-radius: 3px;
+      color: #fff;
+  
+  }
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* The grid: Three equal columns that floats next to each other */
+  /*.column {
+    width: 20%;
+    padding: 5px;
+    margin-top: 50px;
+    margin-left: 8%;
+    float: left;
+    column-count: 1;
+
+  }*/
+  .grid-container {
+    
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    width: 25%;
+    padding: 10px;
+    position: relative;
+    left: 13%;
+    top: 10rem;
+    line-height: 40px;
+    padding: 0 22px;
+    font-size: 16px;
+    margin: 5px 0 3px 0;
+    display: inline-block;
+    border: none;
+  
+  }
+  .grid-container1 {
+    
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    width: 25%;
+    padding: 10px;
+    position: relative;
+    left: 13%;
+    top: 3rem;
+    line-height: 40px;
+    padding: 0 22px;
+    font-size: 16px;
+    margin: 5px 0 3px 0;
+    display: inline-block;
+    border: none;
+  
+  }
+  .container0{
+    position: relative;
+    left: 26%;
+    top: 650px;
+    width: 50%;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 6px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background: #003782;
+
+  }
+
+  .container1{
+    position: relative;
+    left: 47.5%;
+    top: 130px;
+    width: 10%;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    border: none;
+    color: #e7ae11;
+    background: #003782;
+
+  }
+  .container2{
+    position: relative;
+    left: 47.5%;
+    top: 15px;
+    width: 10%;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    border: none;
+    color: #e7ae11;
+    background: #003782;
+
+  }
+  .button{
+    background-color: white;
+    border-radius: 10px;
+    color: #e7ae11;
+    border-style: solid;
+    line-height: 15px;
+    border-color: #e7ae11(89, 43%, 51%);
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 2px 0px;
+    cursor: pointer;
+    margin-top: 10.5%;
+    margin-left: 14.5%;
+  }
+  .button:hover{
+    opacity: 0.8;
+    color: #003782;
+    background-color: #e7ae11;
+    border-color: #e7ae11;
+  }
+
+  .button1{
+    background-color: white;
+    border-radius: 10px;
+    color: #e7ae11;
+    border-style: solid;
+    line-height: 15px;
+    border-color: #e7ae11(89, 43%, 51%);
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 2px 0px;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 14.5%;
+  }
+  .button1:hover{
+    opacity: 0.8;
+    color: #003782;
+    background-color: #e7ae11;
+    border-color: #e7ae11;
+  }
+  
+  .grid-container img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  
+  }
+  
+  .grid-container img:hover {
+    opacity: 1;
+  }
+  .grid-container1 img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  
+  }
+  
+  .grid-container1 img:hover {
+    opacity: 1;
+  }
+  
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }  
+
+iframe{
+  margin-left: 10rem;
+  width: 80%;
+  margin-top: -5rem;
+  height: 620px;
+}
