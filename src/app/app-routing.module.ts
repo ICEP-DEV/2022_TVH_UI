@@ -11,7 +11,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ParticipantComponent } from './participant/participant.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { AnnouncementComponent } from './announcement/announcement.component';
+import { AnnoucementComponent } from './annoucement/annoucement.component';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
 import { TeamComponent } from './team/team.component';
 import { DialogComponent } from './dialog/dialog.component';
@@ -32,7 +32,7 @@ const routes: Routes = [
   {path: "layout", component:LayoutComponent},
   {path: "participant", component:ParticipantComponent},
   {path: "dashboard", component:DashboardComponent},
-  {path: "announcement", component:AnnouncementComponent},
+  {path: "annoucement", component:AnnoucementComponent},
   {path: "public-annoucement", component:PublicAnnoucementComponent},
   {path: "team", component:TeamComponent},
   {path: "dialog", component:DialogComponent},

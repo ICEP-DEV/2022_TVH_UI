@@ -16,7 +16,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ParticipantComponent } from './participant/participant.component';
-import { AnnouncementComponent } from './announcement/announcement.component';
+import { AnnoucementComponent } from './annoucement/annoucement.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
@@ -71,7 +71,7 @@ import { CanvasDomModule } from 'angular-canvas';
     SignUpComponent,
     LayoutComponent,
     ParticipantComponent,
-    AnnouncementComponent,
+    AnnoucementComponent,
     DashboardComponent,
     SidebarComponent,
     PublicAnnoucementComponent,
