@@ -42,6 +42,7 @@ export class ApiserviceService {
     apmUrl = 'http://localhost:9002/notice'; /// announcement
 
     uploadUrl = 'http://localhost:9002/uploadTeam '; ///uploadTeams
+    rewardsUrl = 'http://localhost:9002/uploadRewards '; ///uploadRewards
     deletUrl = 'http://localhost:9002/deleteMember'; ///DeleteTeams
     delantUrl = 'http://localhost:9002/deleteAnnouncement'; ///DeleteAnnouncement
     specTeaUrl = 'http://localhost:9002/viewTeamMember'; ///select specific team using id 
@@ -142,11 +143,18 @@ export class ApiserviceService {
         return this._http.post<any>(this.apmUrl, credintials );
     }
 
-        //get data from frontend store it to the database
+        //get file upload data from frontend store it to the database
 
     getUploadTeams(credintials:any)
     {
       return this._http.post<any>(this.uploadUrl, credintials );
+    }
+
+    //get file upload for reward from frontend store it to the database
+
+    getUploadRewards(credintials:any)
+    {
+      return this._http.post<any>(this.rewardsUrl, credintials );
     }
 
     ///delete team

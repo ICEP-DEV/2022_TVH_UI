@@ -146,7 +146,7 @@ clickhandle()
       Swal.fire({
           
         icon: 'success',
-        title: 'Notice board successfully updeted',
+        title: 'Notice board successfully updated',
         showConfirmButton: false,
         timer: 2500
       })

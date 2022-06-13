@@ -57,7 +57,7 @@
     color: #fff!important;
   }
   .bg-info {
-    background-color: #d2d3ff!important;
+    background-color: #ce1127!important;
   }
   .small-box .inner {
     padding: 10px;
@@ -89,7 +89,7 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-size: 25px;
-    color: #6b6c6d;
+    color: #fff;
   }
   .small-box .icon {
     position: relative;
@@ -101,7 +101,7 @@
   }
   .bg-reg{
     color: #fff;
-    background-color: #f7e582!important;
+    background-color: #e6b012!important;
   }
   .demo-inline-calendar-card {
     width: 300px;
@@ -121,7 +121,7 @@
     max-width: 100%;
   }
   .dark-brown[_ngcontent-jbo-c8] {
-    background-color: #deb887;
+    background-color: #013b92;
     color: #fff;
     width: 60%;
     border-radius: 0.28rem;
@@ -145,7 +145,7 @@
       
   }
   .brown[_ngcontent-jbo-c8] {
-    background-color: brown;
+    background-color: #ce1127;
     color: #fff;
     width: 25%;
   }
@@ -218,5 +218,9 @@
     border-radius: 0.28rem;
     box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
     margin-top: 5%;
+  }
+  .row2
+  {
+    margin-left: 20px;
   }
   

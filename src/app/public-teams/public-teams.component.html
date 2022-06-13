@@ -78,6 +78,21 @@
   </div>
   
 </div>
+
+<h2>Mentors</h2>
+<div class="row2">
+  <div class="box2" *ngFor="let us of mentor" >
+    <img [src]="us.file">
+      <h1 class="heading">{{us.name}} {{us.surname}}</h1>
+      <p>{{us.occupation}}</p>
+      <p>
+
+        {{us.description}}                                                                                                                                                                                                                                                                                                                                                                        
+      </p>
+
+  </div>
+  
+</div>
   </section>
   <app-footer></app-footer>
 </body>

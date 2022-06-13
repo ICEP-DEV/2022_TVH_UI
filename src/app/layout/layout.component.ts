@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ApiserviceService} from '../apiservice.service';
 import { Router } from '@angular/router';
+import { DatePipe } from '@angular/common'
 
 @Component({
   selector: 'app-layout',
@@ -23,6 +24,9 @@ export class LayoutComponent implements OnInit {
   })
 
 
+
+
+
   
      this.service.getCountTeams().subscribe((res) =>{
        console.log(res, "res==>");
@@ -31,5 +35,11 @@ export class LayoutComponent implements OnInit {
    })
 
   }
+
+  // public date:any;
+  // myFunction(){
+  //   this.date =new Date();
+  //   let latest_date =this.datepipe.transform(this.date, 'yyyy-MM-dd');
+  //  }
 
 }

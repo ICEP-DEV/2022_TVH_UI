@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import {ActivatedRoute} from '@angular/router'
 import {ApiserviceService} from '../apiservice.service';
 import Swal from 'sweetalert2';
+import { MatDialog } from '@angular/material/dialog';
+
 
 //import { constants } from 'buffer';
 
@@ -19,7 +21,7 @@ export class DialogComponent implements OnInit {
   
 
 
-  constructor(private service:ApiserviceService, private route:Router, private formBuilder : FormBuilder, private router:ActivatedRoute, private _Activatedroute:ActivatedRoute) { }
+  constructor(private service:ApiserviceService, public dialog: MatDialog,private route:Router, private formBuilder : FormBuilder, private router:ActivatedRoute, private _Activatedroute:ActivatedRoute) { }
 
   ngOnInit(): void {
     //  this.leaderForm = this.formBuilder.group({
@@ -207,6 +209,11 @@ export class DialogComponent implements OnInit {
             showConfirmButton: false,
             timer: 2500
           })
+          this.leaderForm.reset();
+        
+          this.dialog.closeAll();
+        
+          
         }else
         {
 

@@ -80,10 +80,9 @@ export class RegistrationFormComponent implements OnInit {
 
     skill: skillss[] = [
     {value: 'Business Analyst', viewValue: 'Business Analyst'},
-    {value: 'Programmer', viewValue: 'Programmer'},
-    {value: 'UX designer', viewValue: 'UX designer'},
-    {value: 'UI designer', viewValue: 'UI designer'},
-    {value: 'Tester', viewValue: 'Tester'},
+    {value: 'Frontend Developer', viewValue: 'Frontend Developer'},
+    {value: 'Backend Developer', viewValue: 'Tester'},
+    {value: 'UX &UI Designer', viewValue: 'Backend Developer'},
     {value: 'Enthusiast', viewValue: 'Enthusiast'},
     {value: 'Scrum Master', viewValue: 'Scrum Master'},
     {value: 'Entrepreneur', viewValue: 'Entrepreneur'},
@@ -252,6 +251,7 @@ export class RegistrationFormComponent implements OnInit {
           )
 
             this.registerForm.reset();
+            this.route.navigate([""])
             // this.route.navigate([""])
         }
         if(res.message =="Email already signed up!!!")

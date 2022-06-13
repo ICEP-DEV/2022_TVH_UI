@@ -6,6 +6,7 @@ import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { LogoutComponent } from '../logout/logout.component';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
+import { PostComponent } from '../post/post.component';
 
 
 @Component({
@@ -32,6 +33,12 @@ export class SidebarComponent {
     });
   }
 
+  opeDialog() {
+    this.dialog.open(PostComponent, {
+      width: '30%',
+      height: '60%'
+    });
+  }
 
   check()
   {

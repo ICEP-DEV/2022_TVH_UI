@@ -13,8 +13,7 @@ import Swal from 'sweetalert2'
 })
 export class LoginAdminComponent implements OnInit {
 
-  password:string =''
-  email:string =''
+
   constructor(private service:ApiserviceService, private route:Router) { }
 
   ngOnInit(): void {
@@ -49,7 +48,19 @@ export class LoginAdminComponent implements OnInit {
 
   clickhandle(){
 
-    this.service.getAllData({"admin_email":this.emal, "admin_password": this.password }).subscribe((res)=>{
+
+    
+
+    if(this.loginForm.invalid)
+    {
+      
+      console.log("invalid");
+    }
+    else
+    {
+      console.log(" valid");
+
+    this.service.getAllData({"admin_email":this.emal, "admin_password": this.passw }).subscribe((res)=>{
        
       console.log(res.message);
 
@@ -71,6 +82,30 @@ export class LoginAdminComponent implements OnInit {
         alert(res.message);
       }
     });
+    }
+
+    // this.service.getAllData({"admin_email":this.emal, "admin_password": this.password }).subscribe((res)=>{
+       
+    //   console.log(res.message);
+
+    //   if(res.message =="login Successful")
+    //   {
+    //     //alert("You are successful loged in")
+    //     Swal.fire({
+          
+    //       icon: 'success',
+    //       title: 'Successfully login',
+    //       showConfirmButton: false,
+    //       timer: 2500
+    //     })
+    //       this.route.navigate(["layout"])
+          
+    //   }
+    //   else{
+
+    //     alert(res.message);
+    //   }
+    // });
     
     
   }
