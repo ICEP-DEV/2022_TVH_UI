@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+<<<<<<< HEAD
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { LogoutComponent } from '../logout/logout.component';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
 import { PostComponent } from '../post/post.component';
 
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @Component({
   selector: 'app-sidebar',
@@ -16,14 +19,18 @@ import { PostComponent } from '../post/post.component';
 })
 export class SidebarComponent {
 
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
       shareReplay()
     );
 
+<<<<<<< HEAD
   constructor(private breakpointObserver: BreakpointObserver, private dialog: MatDialog, private route:Router) {}
 
   openDialog(): void {
@@ -56,5 +63,8 @@ export class SidebarComponent {
       }
     })
   }
+=======
+  constructor(private breakpointObserver: BreakpointObserver) {}
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 }

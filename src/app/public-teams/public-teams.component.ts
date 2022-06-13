@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
 import {ApiserviceService} from '../apiservice.service';
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @Component({
   selector: 'app-public-teams',
@@ -9,6 +12,7 @@ import {ApiserviceService} from '../apiservice.service';
 })
 export class PublicTeamsComponent implements OnInit {
 
+<<<<<<< HEAD
   
 
   constructor(private service:ApiserviceService, private route:Router) { }
@@ -16,10 +20,15 @@ export class PublicTeamsComponent implements OnInit {
   volunteer:any;
   mentor:any;
   orgteam:any;
+=======
+  constructor() { }
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   showMe:boolean = true
 
   ngOnInit(): void {
 
+<<<<<<< HEAD
     this.service.getOrginiser().subscribe((res) =>{
       console.log(res, "res==>");
 
@@ -51,10 +60,16 @@ this.service.getOrgTeam().subscribe((res) =>{
 
   
 
+=======
+  }
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   theMenu()
   {
     this.showMe=!this.showMe
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 }

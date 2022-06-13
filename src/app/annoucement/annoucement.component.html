@@ -13,12 +13,17 @@
     <mat-card class='my-5 mat-elevation-z5 p-0'>
 
       <mat-card-header class="mat-card-header">
+<<<<<<< HEAD
           <mat-card-title class="p-2" *ngIf='!editMode'>ADD POST ON ANNOUNCEMENT</mat-card-title>
+=======
+          <mat-card-title class="p-2" *ngIf='!editMode'>ADD POST</mat-card-title>
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
       </mat-card-header>
 
       <mat-divider></mat-divider>
 
+<<<<<<< HEAD
       <form #postForm="ngForm" (ngSubmit)="clickhandle() "  >
           <mat-card-content class="p-3">
 
@@ -37,6 +42,18 @@
             
           </ckeditor>
 
+=======
+      <form>
+          <mat-card-content class="p-3">
+
+          <input name="title" type='text' matInput placeholder="Post Title" required>
+
+          <ckeditor>
+              [(ngModel)]="ckeditorContent"
+          </ckeditor>
+
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
           </mat-card-content>
 
           <mat-divider></mat-divider>

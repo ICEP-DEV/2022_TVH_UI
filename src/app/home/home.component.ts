@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,10 +10,12 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
 
   }
 
+<<<<<<< HEAD
   countDownDate = new Date();
 
   days:any = 45;
@@ -61,6 +64,8 @@ export class HomeComponent implements OnInit {
 
   }, 1000)
 
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 
 }

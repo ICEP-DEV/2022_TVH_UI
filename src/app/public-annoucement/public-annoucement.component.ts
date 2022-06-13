@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import {ApiserviceService} from '../apiservice.service';
 import { Router } from '@angular/router';
 import { Announcements } from '../interfaces/announcements';
 import * as XLSX from 'xlsx';
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @Component({
   selector: 'app-public-annoucement',
@@ -11,6 +14,7 @@ import * as XLSX from 'xlsx';
 })
 export class PublicAnnoucementComponent implements OnInit {
 
+<<<<<<< HEAD
   constructor(private service:ApiserviceService, private route:Router) { }
 
   readData:any;
@@ -36,4 +40,11 @@ export class PublicAnnoucementComponent implements OnInit {
     return tmp.textContent || tmp.innerText || "";
 }
 
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 }

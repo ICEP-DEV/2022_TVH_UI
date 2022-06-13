@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import {ApiserviceService} from '../apiservice.service';
 import { Router } from '@angular/router';
 import {ReactiveFormsModule, FormsModule, Validators, FormGroup, FormControl, FormBuilder} from '@angular/forms';
@@ -31,6 +32,9 @@ interface camp {
   viewValue: string;
 }
 
+=======
+// import Swal from 'sweetalert2';
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @Component({
   selector: 'app-registration-form',
@@ -112,8 +116,11 @@ export class RegistrationFormComponent implements OnInit {
  
  
 
+  // showMe:boolean = true
+
   ngOnInit(): void {
 
+<<<<<<< HEAD
 
 
     this.registerForm = new FormGroup({
@@ -132,7 +139,18 @@ export class RegistrationFormComponent implements OnInit {
       "level": new FormControl(null,Validators.required ),
       
     })
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   }
+  // theMenu()
+  // {
+  //   this.showMe=!this.showMe
+  // }
+  // title ='sweetalert2';
+  // alertWithSuccess(){
+  //   Swal.fire("Thank you... ", 'Your application was successfully submitted ','success')
+  // }
+
 
 
   

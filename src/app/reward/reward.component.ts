@@ -9,6 +9,7 @@ export class RewardComponent implements OnInit {
 
   constructor() { }
 
+<<<<<<< HEAD
   showMe:boolean = true
 
   ngOnInit(): void {
@@ -19,4 +20,9 @@ export class RewardComponent implements OnInit {
     this.showMe=!this.showMe
   }
 
+=======
+  ngOnInit(): void {
+  }
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 }

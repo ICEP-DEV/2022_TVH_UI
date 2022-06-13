@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import {ApiserviceService} from '../apiservice.service';
 import { Router } from '@angular/router';
 import {ReactiveFormsModule, FormsModule, Validators, FormGroup, FormControl} from '@angular/forms';
 import {  EventEmitter, Input, Output } from '@angular/core';
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @Component({
   selector: 'app-user-login',
@@ -11,6 +14,7 @@ import {  EventEmitter, Input, Output } from '@angular/core';
 })
 export class UserLoginComponent implements OnInit {
 
+<<<<<<< HEAD
   password:string =''
   email:string =''
 
@@ -63,4 +67,11 @@ export class UserLoginComponent implements OnInit {
 
 
 
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 }

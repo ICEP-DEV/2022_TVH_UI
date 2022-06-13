@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 @media only screen and (max-width: 600px) {
   *{ margin: 0;
     padding: 0;
@@ -14,8 +17,13 @@
     text-align: left;
     z-index: 2;
 
+<<<<<<< HEAD
 
   }
+=======
+  }
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   .nav-links ul li a{
 
     text-decoration: none;
@@ -93,7 +101,11 @@
 .main{
   background: #fff;
   width: 100%;
+<<<<<<< HEAD
   height: 460vh;
+=======
+  height: 800vh;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   background-position: center;
   background-size: cover;
   margin-top: 10px;
@@ -110,7 +122,11 @@ p{
 }
 ul{
   list-style: disc;
+<<<<<<< HEAD
   margin-left: 30px;
+=======
+  /* margin-left: 30px; */
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 }
 
@@ -119,6 +135,7 @@ ul{
   *{ margin: 0;
     padding: 0;
   }
+<<<<<<< HEAD
   .thenav{
     display: flex;
     justify-content:center ;
@@ -165,6 +182,68 @@ ul{
 
 }
 } 
+=======
+  .nav-links{
+    position: absolute;
+    background: #003782;
+    color:#fff;
+    height: 83vh;
+    width: 200px;
+    top:0;
+    left: -100%;
+    text-align: left;
+    z-index: 2;
+
+  }
+
+  .nav-links ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 8px 12px;
+
+}
+   .thenav img{
+  width: 35px;
+  margin-left: 1px;
+  margin-top: 2px;
+}
+.thenav h1{
+
+  color: #003782;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.nav-links ul li{
+  display: block;
+  padding: 5px;
+
+}
+
+#check:checked ~ .nav-links{
+  left: 0;
+}
+.checkbtn .las{
+  color: #e6b012;
+  float: right;
+  line-height: 80px;
+  font-size: 30px;
+  margin-top: -50px;
+  margin-right: 10px;
+}
+#check{
+  display: none;
+}
+.nav-links ul{
+  padding: 30px;
+}
+
+}
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 @media only screen and (min-width: 768px) {
   *{ margin: 0;
     padding: 0;
@@ -240,7 +319,11 @@ nav img{
 .main{
   background: #fff;
   width: 100%;
+<<<<<<< HEAD
   height: 305vh;
+=======
+  height: 405vh;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   background-position: center;
   background-size: cover;
   margin-top: 10px;
@@ -278,7 +361,11 @@ ul{
   #check{
     display: none;
   }
+<<<<<<< HEAD
   .checkbtn{
+=======
+  .las{
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
     display: none;
   }
 }
@@ -345,7 +432,11 @@ ul{
 .main{
   background: #fff;
   width: 100%;
+<<<<<<< HEAD
   height: 275vh;
+=======
+  height: 365vh;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   background-position: center;
   background-size: cover;
   margin-top: 10px;
@@ -368,10 +459,17 @@ ul{
 #check{
   display: none;
 }
+<<<<<<< HEAD
 .checkbtn{
   display: none;
 }
 } 
+=======
+.las{
+  display: none;
+}
+}
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @media only screen and (min-width: 1200px) {
   *{ margin: 0;
@@ -439,7 +537,11 @@ ul{
 .main{
   background: #fff;
   width: 100%;
+<<<<<<< HEAD
   height: 200vh;
+=======
+  height: 280vh;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   background-position: center;
   background-size: cover;
   margin-top: 10px;
@@ -478,6 +580,7 @@ ul{
 #check{
   display: none;
 }
+<<<<<<< HEAD
 .checkbtn{
   display: none;
 }
@@ -596,3 +699,9 @@ ul{
   display: none;
 }
 }
+=======
+.las{
+  display: none;
+}
+}
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c

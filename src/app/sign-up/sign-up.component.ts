@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import {ApiserviceService} from '../apiservice.service';
 import { Router } from '@angular/router';
 import {ReactiveFormsModule, FormsModule, Validators, FormGroup, FormControl, FormBuilder} from '@angular/forms';
@@ -10,6 +11,8 @@ interface userss {
   value: string;
   viewValue: string;
 }
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @Component({
   selector: 'app-sign-up',
@@ -18,6 +21,7 @@ interface userss {
 })
 export class SignUpComponent implements OnInit {
 
+<<<<<<< HEAD
   submitted: boolean = false;
 
   constructor(private service:ApiserviceService, private route:Router, private formBuilder: FormBuilder) {
@@ -175,3 +179,11 @@ export class SignUpComponent implements OnInit {
 
 
 
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c

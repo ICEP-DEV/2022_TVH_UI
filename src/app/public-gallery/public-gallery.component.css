@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 @media only screen and (max-width: 600px) {
   *{ margin: 0;
     padding: 0;
@@ -14,8 +17,13 @@
     text-align: left;
     z-index: 2;
 
+<<<<<<< HEAD
 
   }
+=======
+  }
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   .nav-links ul li a{
 
     text-decoration: none;
@@ -62,10 +70,16 @@
   padding: 30px;
 }
 
+<<<<<<< HEAD
 
 .main{
   width: 100%;
   height: 585vh;
+=======
+.main{
+  width: 100%;
+  height: 710vh;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   background: linear-gradient(rgba(10, 0, 102, 0.8),rgba(255, 0, 0, 0.5)),url(annouce-pic.jpg);
   background-position: center;
   background-size: cover;
@@ -167,6 +181,7 @@ p{
   *{ margin: 0;
     padding: 0;
   }
+<<<<<<< HEAD
   .thenav{
     display: flex;
     justify-content:center ;
@@ -212,6 +227,67 @@ p{
     color: #fff;
 
 }
+=======
+  .nav-links{
+    position: absolute;
+    background: #003782;
+    color:#fff;
+    height: 83vh;
+    width: 200px;
+    top:0;
+    left: -100%;
+    text-align: left;
+    z-index: 2;
+
+  }
+
+  .nav-links ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 8px 12px;
+
+}
+   .thenav img{
+  width: 35px;
+  margin-left: 1px;
+  margin-top: 2px;
+}
+.thenav h1{
+
+  color: #003782;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.nav-links ul li{
+  display: block;
+  padding: 5px;
+
+}
+
+#check:checked ~ .nav-links{
+  left: 0;
+}
+.checkbtn .las{
+  color: #e6b012;
+  float: right;
+  line-height: 80px;
+  font-size: 30px;
+  margin-top: -50px;
+  margin-right: 10px;
+}
+#check{
+  display: none;
+}
+.nav-links ul{
+  padding: 30px;
+}
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 .main{
   width: 100%;
   height: 585vh;
@@ -312,7 +388,11 @@ p{
   color: #003782;
 }
 }
+<<<<<<< HEAD
  @media only screen and (min-width: 768px) {
+=======
+@media only screen and (min-width: 768px) {
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   *{ margin: 0;
     padding: 0;
   }
@@ -461,6 +541,7 @@ p{
   box-shadow: 0 0 10px #fff, 0 0 10px #fff;
   color: #003782;
 }
+<<<<<<< HEAD
 #check{
   display: none;
 }
@@ -469,6 +550,16 @@ p{
   display: none;
 }
 } 
+=======
+.las{
+  display:none;
+  }
+  #check{
+
+  display:none;
+  }
+}
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 @media only screen and (min-width: 992px) {
   *{ margin: 0;
     padding: 0;
@@ -518,6 +609,7 @@ p{
     color: #fff;
 
 }
+<<<<<<< HEAD
 #check{
   display: none;
 }
@@ -525,6 +617,16 @@ p{
 {
   display: none;
 }
+=======
+.las{
+  display:none;
+  }
+  #check{
+
+  display:none;
+  }
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 }
 @media only screen and (min-width: 992px) {
   *{ margin: 0;
@@ -672,6 +774,7 @@ p{
   box-shadow: 0 0 10px #fff, 0 0 10px #fff;
   color: #003782;
 }
+<<<<<<< HEAD
 #check{
   display: none;
 }
@@ -680,6 +783,16 @@ p{
   display: none;
 }
 } 
+=======
+.las{
+  display:none;
+  }
+  #check{
+
+  display:none;
+  }
+}
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @media only screen and (min-width: 1200px) {
   *{ margin: 0;
@@ -830,6 +943,7 @@ p{
   box-shadow: 0 0 10px #fff, 0 0 10px #fff;
   color: #003782;
 }
+<<<<<<< HEAD
 #check{
   display: none;
 }
@@ -997,3 +1111,13 @@ p{
   }
   
 }
+=======
+.las{
+  display:none;
+  }
+  #check{
+
+  display:none;
+  }
+}
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c

@@ -63,7 +63,10 @@
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 h1{
   text-align: center;
   color: #003782;
@@ -518,6 +521,7 @@ h2{
   display: none;
 }
 }
+<<<<<<< HEAD
 @media only screen and (min-width: 1920px){
  
   *{
@@ -630,3 +634,5 @@ h2{
   font-size: 25px;
 }
 }
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c

@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import {ApiserviceService} from '../apiservice.service';
 import { Router } from '@angular/router';
 import { DatePipe } from '@angular/common'
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @Component({
   selector: 'app-layout',
@@ -10,6 +13,7 @@ import { DatePipe } from '@angular/common'
 })
 export class LayoutComponent implements OnInit {
 
+<<<<<<< HEAD
   constructor(private service:ApiserviceService, private route:Router) { }
 
   readData:any;
@@ -42,4 +46,11 @@ export class LayoutComponent implements OnInit {
   //   let latest_date =this.datepipe.transform(this.date, 'yyyy-MM-dd');
   //  }
 
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 }

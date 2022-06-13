@@ -5,6 +5,7 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar><h1>Menu</h1></mat-toolbar>
     <mat-nav-list>
+<<<<<<< HEAD
       <a mat-list-item href="layout" routerLinkActive="active"><mat-icon>dashboard</mat-icon> Dashboard </a>
       <!-- <a mat-list-item href="post" routerLinkActive="active"><mat-icon>emoji_events</mat-icon> Rewards </a> -->
       <a mat-list-item href="participant" routerLinkActive="active"><mat-icon>people</mat-icon> Participants </a>
@@ -12,6 +13,13 @@
       <a mat-list-item href="announcementlist"  routerLinkActive="active"><mat-icon>campaign</mat-icon> Annoucements List </a>
       <a mat-list-item href="teams"  routerLinkActive="active"><mat-icon>people</mat-icon> Team </a>
       <!-- <a mat-list-item href="gallery" routerLinkActive="active"><mat-icon>photo_library</mat-icon> Gallery </a> -->
+=======
+      <a mat-list-item  href="dashboard" routerLinkActive="active"><mat-icon>home</mat-icon> Dashboard</a>
+      <a mat-list-item href="participant" ><mat-icon>people</mat-icon> Participants</a>
+      <a mat-list-item href="annoucement"><mat-icon>campaign</mat-icon> Annoucements</a>
+      <a mat-list-item href="gallery"><mat-icon>photo_library</mat-icon> Gallery</a>
+      <a mat-list-item href="reward"><mat-icon>emoji_events</mat-icon>Rewards</a>
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -24,10 +32,19 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
+<<<<<<< HEAD
       <button mat-raised-button class="btn" (click)=" check()">Logout</button>
       <span><mat-icon>account_circle</mat-icon></span>
+=======
+      <button class="btn">Logout</button>
+      <span><mat-icon>person</mat-icon></span>
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
       <img src="../assets/tut-logo.png">
       <span>Admin Dashboard</span>
     </mat-toolbar>
   </mat-sidenav-content>
+<<<<<<< HEAD
 </mat-sidenav-container>
+=======
+</mat-sidenav-container>
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c

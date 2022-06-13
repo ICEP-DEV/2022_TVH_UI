@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { RewardsComponent } from './rewards/rewards.component';
 import { GalleryComponent } from './gallery/gallery.component';
+<<<<<<< HEAD
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component'
 import {HttpClientModule} from '@angular/common/http';
@@ -23,10 +24,20 @@ import { AnnoucementComponent } from './annoucement/annoucement.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RewardComponent } from './reward/reward.component';
 import {CKEditorModule} from 'ng2-ckeditor';
+=======
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoginFormComponent } from './login-form/login-form.component';
+import {MatButtonModule} from '@angular/material/button';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LayoutModule } from '@angular/cdk/layout';
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+<<<<<<< HEAD
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
@@ -56,6 +67,24 @@ import { NoopAnimationsModule  } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 
+=======
+import { LayoutComponent } from './layout/layout.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { ParticipantComponent } from './participant/participant.component';
+import { AnnoucementComponent } from './annoucement/annoucement.component';
+import { RewardComponent } from './reward/reward.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { FormsModule } from '@angular/forms';
+import { CKEditorModule } from 'ng2-ckeditor';
+import { PublicAnnoucementComponent } from './public-annoucement/public-annoucement.component';
+import { FooterComponent } from './footer/footer.component';
+import { PublicTeamsComponent } from './public-teams/public-teams.component';
+import { PublicGalleryComponent } from './public-gallery/public-gallery.component';
+import { RulesComponent } from './rules/rules.component';
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 
 
@@ -67,6 +96,7 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
     HomeComponent,
     RewardsComponent,
     GalleryComponent,
+<<<<<<< HEAD
     LoginAdminComponent,
     RegistrationFormComponent,
     AdminboardComponent,
@@ -97,15 +127,47 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
  
     
     
+=======
+    RegistrationFormComponent,
+    LoginFormComponent,
+    UserLoginComponent,
+    SignUpComponent,
+    LayoutComponent,
+    ParticipantComponent,
+    AnnoucementComponent,
+    DashboardComponent,
+    RewardComponent,
+    SidebarComponent,
+    PublicAnnoucementComponent,
+    FooterComponent,
+    PublicTeamsComponent,
+    PublicGalleryComponent,
+    RulesComponent,
+
+
+
+
+
+
+
+
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+<<<<<<< HEAD
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
     ReactiveFormsModule,
+=======
+    FontAwesomeModule,
+    MatButtonModule,
+    LayoutModule,
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
@@ -114,6 +176,7 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
     MatCardModule,
     MatMenuModule,
     FormsModule,
+<<<<<<< HEAD
     CKEditorModule,
     MatTableModule,
     MatFormFieldModule,
@@ -131,6 +194,9 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
 
     
     
+=======
+    CKEditorModule
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
   ],
   providers: [ApiserviceService],

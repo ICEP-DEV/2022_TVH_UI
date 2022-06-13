@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import {ApiserviceService} from '../apiservice.service';
 import { Router } from '@angular/router';
 import * as XLSX from 'xlsx';
 
 
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @Component({
   selector: 'app-participant',
@@ -12,6 +15,7 @@ import * as XLSX from 'xlsx';
 })
 export class ParticipantComponent implements OnInit {
 
+<<<<<<< HEAD
   title ='Admin';
   fileName = 'applicants.xlsx';
   status = 'Pending..';
@@ -49,6 +53,11 @@ export class ParticipantComponent implements OnInit {
   })
 
 
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   }
 
 }

@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
+<<<<<<< HEAD
  @media only screen and (max-width: 600px) {
   *{ margin: 0;
     padding: 0;
@@ -16,6 +17,45 @@
   position: sticky;
   top: 0;
 
+=======
+@media only screen and (max-width: 600px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .nav-links{
+    position: absolute;
+    background: #003782;
+    color:#fff;
+    height: 83vh;
+    width: 200px;
+    top:0;
+    left: -100%;
+    text-align: left;
+    z-index: 2;
+
+  }
+
+  .nav-links ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 8px 12px;
+
+}
+   .thenav img{
+  width: 35px;
+  margin-left: 1px;
+  margin-top: 2px;
+}
+.thenav h1{
+
+  color: #003782;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -50px;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 }
 
 .nav-links ul li{
@@ -23,6 +63,7 @@
   padding: 5px;
 
 }
+<<<<<<< HEAD
 .nav-links{
   position: absolute;
   background: #003782;
@@ -58,6 +99,123 @@ nav .las{
     color: #fff;
     font-size: 17px;
     padding: 8px 12px;
+=======
+
+#check:checked ~ .nav-links{
+  left: 0;
+}
+.checkbtn .las{
+  color: #e6b012;
+  float: right;
+  line-height: 80px;
+  font-size: 30px;
+  margin-top: -50px;
+  margin-right: 10px;
+}
+#check{
+  display: none;
+}
+.nav-links ul{
+  padding: 30px;
+}
+.container{
+  width: 100%;
+  height: 170vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  display:block;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 70%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 12%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 30px;
+  width: 75%;
+  font-size: 15px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+}
+@media only screen and (min-width: 600px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 70px;
+  margin-left: -180px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -28%;
+
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  font-weight: bold;
+  left: -8%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
 
 }
 .container{
@@ -81,6 +239,175 @@ nav .las{
   .theAge input[type="text"]
   {
   border: 1px solid #000;
+  width: 12%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 30px;
+  width: 75%;
+  font-size: 15px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+}
+@media only screen and (min-width: 600px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 70px;
+  margin-left: -180px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -28%;
+
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  font-weight: bold;
+  left: -8%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+
+}
+@media only screen and (min-width: 768px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 60px;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: 2%;
+
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  left: 1%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+    font-size: 13px;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
+
+}
+.container{
+  width: 100%;
+<<<<<<< HEAD
+  height: 170vh;
+=======
+  height: 200vh;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+<<<<<<< HEAD
+  display:block;
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+<<<<<<< HEAD
+  width: 70%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+=======
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+<<<<<<< HEAD
   width: 12%;
   border-radius: 5px;
   padding: 5px;
@@ -648,6 +975,14 @@ nav img{
   font-size: 18px;
 }
 select{
+=======
+  width: 6%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  select{
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   padding-top: 5px;
   border-radius: 5px;
   border: 1px solid #000;
@@ -655,6 +990,7 @@ select{
   width: 31%;
   font-size: 18px;
   margin-left: 40px;
+<<<<<<< HEAD
 }
 .btn{
   background-color: #003782;
@@ -675,6 +1011,35 @@ select{
 @media (min-width:1920px){
   *{
     margin: 0;
+=======
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+  .checkbtn{
+    display: none;
+  }
+  #check
+  {
+    display: none;
+  }
+
+}
+@media only screen and (min-width: 992px) {
+  *{ margin: 0;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
     padding: 0;
   }
   .thenav{
@@ -687,11 +1052,19 @@ select{
 
 }
 .thenav img{
+<<<<<<< HEAD
   width: 100px;
   margin-left: -430px;
   margin-top: 5px;
 }
 .thenav ul{
+=======
+  width: 70px;
+  margin-left: -140px;
+  margin-top: 5px;
+}
+.nav-links ul{
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
     display: flex;
     list-style: none;
     margin: 20px 0px;
@@ -707,15 +1080,23 @@ select{
   color: #003782;
   margin-top: 15px;
   position: relative;
+<<<<<<< HEAD
   left: -15%;
   font-size: 35px;
+=======
+  font-weight: bold;
+  left: -6%;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 }
 .nav-links ul li a{
     text-decoration: none;
     color: #003782;
     padding: 8px 12px;
     transition: all .5s ease;
+<<<<<<< HEAD
     font-size: 22px;
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 }
 .nav-links ul li a:hover{
     background-color: #003782;
@@ -723,6 +1104,7 @@ select{
     color: #fff;
 
 }
+<<<<<<< HEAD
 
 .container{
   width: 100%;
@@ -735,21 +1117,45 @@ select{
 }
 .container input[type="text"]
 {
+=======
+.container{
+  width: 100%;
+  height: 150vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  }
+  .container input[type="text"]
+  {
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   border: 1px solid #000;
   width: 30%;
   border-radius: 5px;
   padding: 5px;
   font-size: 18px;
+<<<<<<< HEAD
 }
 .theAge input[type="text"]
 {
+=======
+  }
+  .theAge input[type="text"]
+  {
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   border: 1px solid #000;
   width: 6%;
   border-radius: 5px;
   padding: 5px;
   font-size: 18px;
+<<<<<<< HEAD
 }
 select{
+=======
+  }
+  select{
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   padding-top: 5px;
   border-radius: 5px;
   border: 1px solid #000;
@@ -757,8 +1163,13 @@ select{
   width: 31%;
   font-size: 18px;
   margin-left: 40px;
+<<<<<<< HEAD
 }
 .btn{
+=======
+  }
+  .btn{
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   background-color: #003782;
   color: #fff;
   font-size: 18px;
@@ -768,6 +1179,7 @@ select{
   height: 40px;
   margin-left: 40px;
 
+<<<<<<< HEAD
 }
 .btn:hover{
   background-color: #002252;
@@ -781,3 +1193,128 @@ select{
   align-items: center;
   margin-left: 38px;
 }
+=======
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+  .checkbtn{
+    display: none;
+  }
+  #check
+  {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  *{ margin: 0;
+    padding: 0;
+  }
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+.thenav img{
+  width: 72px;
+  margin-left: -170px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -25%;
+
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  left: -6%;
+  font-weight: bold;
+  font-size: 24px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+    font-size: 19px;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+.container{
+  width: 100%;
+  height: 160vh;
+  }
+  .container input{
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 40px;
+  }
+  .container input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  display: block;
+  }
+  .theAge input[type="text"]
+  {
+  border: 1px solid #000;
+  width: 6%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  }
+  select{
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  height: 35px;
+  width: 31%;
+  font-size: 18px;
+  margin-left: 40px;
+  }
+  .btn{
+  background-color: #003782;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-left: 40px;
+
+  }
+  .btn:hover{
+  background-color: #002252;
+  cursor: pointer;
+  }
+  #check{
+    display: none;
+  }
+
+}
+
+
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c

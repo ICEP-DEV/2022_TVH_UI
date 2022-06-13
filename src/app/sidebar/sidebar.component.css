@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .sidenav-container{
   overflow: hidden;
 }
@@ -13,6 +14,23 @@
 .mat-toolbar.mat-primary {
   position: sticky;
   height: 11vh;
+=======
+
+.sidenav {
+  width: 200px;
+  background: #013b92;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  color:#fff;
+
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  height: 17vh;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   top: 0;
   z-index: 1;
   background: #013b92;
@@ -31,6 +49,10 @@ a .active{
  font-size: 15px;
  box-shadow: 0 0 7px #001a41,0 0 7px #001a41;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 h1{
   margin: 50px;
 }
@@ -53,6 +75,7 @@ img{
   border-radius: 5px;
 }
 span .mat-icon{
+<<<<<<< HEAD
   font-size: 55px;
   position: absolute;
   right: 12%;
@@ -66,6 +89,23 @@ span .mat-icon{
   right: 3%;
   outline: none;
   border: none;
+=======
+  font-size: 40px;
+  position: absolute;
+  right: 15%;
+  top: 25%;
+}
+.btn{
+  color: #000;
+  font-size: 13px;
+  background: #fff;
+  position: absolute;
+  right: 5%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
@@ -76,4 +116,8 @@ span .mat-icon{
   background: #ff0000;
   color: #fff;
   cursor: pointer;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c

@@ -1508,6 +1508,10 @@ transform:scale(1.1);
 }
 
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   *{ margin: 0;
@@ -1883,6 +1887,7 @@ transform:scale(1.1);
 
 
 }
+<<<<<<< HEAD
 @media (min-width:1920px)
 {
   *{
@@ -2265,4 +2270,6 @@ transform:scale(1.1);
   display: none;
 }
 }
+=======
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 

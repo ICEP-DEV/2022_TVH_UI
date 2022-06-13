@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 import { Component, Input, OnInit } from '@angular/core';
 import {ApiserviceService} from '../apiservice.service';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
+=======
+import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
 @Component({
   selector: 'app-annoucement',
@@ -12,6 +18,7 @@ import Swal from 'sweetalert2';
 })
 export class AnnoucementComponent implements OnInit {
 
+<<<<<<< HEAD
   
 
   editMode: boolean = false;
@@ -26,11 +33,18 @@ export class AnnoucementComponent implements OnInit {
 
 
   
+=======
+  editMode: boolean = false;
+  private postId: string | undefined;
+
+  constructor(public route: ActivatedRoute, private router: Router) { }
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((paramMap: ParamMap) => {
       if (paramMap.has('id')) { // the id passed in paramMap.has('id') has to be same as it define in routing module.
         this.editMode = true;
+<<<<<<< HEAD
         
 
       } else {
@@ -160,3 +174,41 @@ clickhandle()
 
 }
 
+=======
+
+      } else {
+        this.editMode = false;
+      }
+    });
+  }
+
+  ckeditorContent:any;
+
+
+
+  savePost(form: NgForm) {
+    if (form.invalid) {
+      return;
+    } else {
+      if (this.editMode) {
+        const post = {
+          _id: this.postId,
+          title: form.value.title,
+          body: form.value.body,
+        }
+      } else {
+        const post = {
+          title: form.value.title,
+          body: form.value.body
+        }
+      }
+      this.router.navigate(['/']);
+    }
+  }
+
+
+
+
+
+}
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c

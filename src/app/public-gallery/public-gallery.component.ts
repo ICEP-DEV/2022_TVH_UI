@@ -8,8 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class PublicGalleryComponent implements OnInit {
 
   constructor() { }
+<<<<<<< HEAD
 
   ngOnInit(): void {
   }
 
+=======
+  showMe:boolean = true
+
+  ngOnInit(): void {
+
+  }
+  theMenu()
+  {
+    this.showMe=!this.showMe
+  }
+>>>>>>> c3b44c0c26bcbf94671dd7f8a3eff93a9a7bcf1c
 }
