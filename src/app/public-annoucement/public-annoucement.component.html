@@ -48,39 +48,48 @@
     <div class="horizontal-line">
     </div>
   </section>
-  <section>
+ 
+
+  
+
+
+ <section *ngFor="let announcement of announcements">
+
+
+  <!-- //// -->
      <div class="ann-row">
       <div class="posted-ann">
-        <h2>Final hackers shortlist</h2>
-        <p>
-          Hi hackers and attandees please find the attached shortlist of the Hackathon hackers.
-        </p>
-      </div>
-      <section>
-        <div class="hori-line">
-        </div>
-      </section>
-      <div class="posted-ann">
-        <h2>Industry volunteers may now register</h2>
-        <p>Prestigous Industry voluteers can now register to be part of the 2022 Hackathon.</p>
-      </div>
-      <section>
-        <div class="hori-line">
-        </div>
-      </section>
-      <div class="posted-ann">
-        <h2>TVH Rules changed</h2>
-        <p>
-          The rules have been changed to suit and accommodate all the attendees, stakeholders and hackers.
-        </p>
-      </div>
-      <section>
-        <div class="hori-line">
-        </div>
-      </section>
-     </div>
+       
+        
+     
+    
+      <div class="title">
+      {{removeHTML(announcement.title)}}
+    </div>
+    <div class="date">
+      {{announcement.date | date:'fullDate'}}
+    </div>
 
-  </section>
+    <div class="message">
+           
+      {{removeHTML(announcement.message)}}
+
+    </div>  
+       <!--  <a target ="_blank" href="ACADEMIC RECORD.pdf" download class="download-btn">Download PDF</a> -->
+
+      </div>
+      <br>
+     
+     </div>
+     <section>
+      <div class="hori-line">
+      </div>
+    </section>
+
+  </section> 
+
+
+
   <section>
     <div class="the-faq">
       <h2>FAQ's</h2>
@@ -103,7 +112,7 @@
           <div class="icon"><i class="las la-plus"></i></div>
         </label>
         <div class="content">
-          <p>Cash, gits, vouchers and training</p>
+          <p>Cash, gifts, vouchers and training</p>
         </div>
       </div>
       <div class="parent-tab">

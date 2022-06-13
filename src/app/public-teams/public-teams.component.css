@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
 @media only screen and (max-width: 600px) {
   *{ margin: 0;
     padding: 0;
@@ -13,8 +14,8 @@
     text-align: left;
     z-index: 2;
 
-  }
 
+  }
   .nav-links ul li a{
 
     text-decoration: none;
@@ -64,7 +65,7 @@
 
 .main{
   width: 100%;
-  height: 1380vh;
+  height: 1240vh;
   background:linear-gradient(to right,#00265cb7 0%,#00265cb7 100%),url(slider.jpg);
   background-position: center;
   background-size: cover;
@@ -190,65 +191,51 @@ h2{
   *{ margin: 0;
     padding: 0;
   }
-  .nav-links{
-    position: absolute;
-    background: #003782;
-    color:#fff;
-    height: 83vh;
-    width: 200px;
-    top:0;
-    left: -100%;
-    text-align: left;
-    z-index: 2;
-
-  }
-
-  .nav-links ul li a{
-
-    text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-    padding: 8px 12px;
+  .thenav{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
 
 }
-   .thenav img{
-  width: 35px;
-  margin-left: 1px;
-  margin-top: 2px;
-}
-.thenav h1{
-
-  color: #003782;
-  font-weight: bold;
-  font-size: 15px;
-  text-align: center;
-  margin-top: -50px;
-}
-
-.nav-links ul li{
-  display: block;
-  padding: 5px;
-
-}
-
-#check:checked ~ .nav-links{
-  left: 0;
-}
-.checkbtn .las{
-  color: #e6b012;
-  float: right;
-  line-height: 80px;
-  font-size: 30px;
-  margin-top: -50px;
-  margin-right: 10px;
-}
-#check{
-  display: none;
+.thenav img{
+  width: 70px;
+  margin-left: -180px;
+  margin-top: 5px;
 }
 .nav-links ul{
-  padding: 30px;
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
 }
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -28%;
 
+}
+.thenav h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  font-weight: bold;
+  left: -8%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
 
 }
 @media only screen and (min-width: 768px) {
@@ -424,58 +411,14 @@ h2{
   font-size: 15px;
   color:#fff;
 }
+#check{
+  display: none;
 }
-@media only screen and (min-width: 992px) {
-  *{ margin: 0;
-    padding: 0;
-  }
-  .thenav{
-    display: flex;
-    justify-content:center ;
-    align-items: right;
-    background: #fff;
-    position: sticky;
-    top: 0;
-
+.checkbtn{
+  display: none;
 }
-.thenav img{
-  width: 70px;
-  margin-left: -140px;
-  margin-top: 5px;
-}
-.nav-links ul{
-    display: flex;
-    list-style: none;
-    margin: 20px 0px;
-}
-.nav-links ul li{
-    font-family: Arial;
-    font-size: 18px;
-    position: relative;
-    right: -28%;
-
-}
-.thenav h1{
-  color: #003782;
-  margin-top: 15px;
-  position: relative;
-  font-weight: bold;
-  left: -6%;
-}
-.nav-links ul li a{
-    text-decoration: none;
-    color: #003782;
-    padding: 8px 12px;
-    transition: all .5s ease;
-}
-.nav-links ul li a:hover{
-    background-color: #003782;
-    border-radius: 3px;
-    color: #fff;
-
 }
 
-}
 @media only screen and (min-width: 992px) {
   *{ margin: 0;
     padding: 0;
@@ -863,11 +806,15 @@ nav img{
     color: #fff;
 
 }
-
-
-
+#check{
+  display: none;
 }
-@media only screen and (min-width: 768px) {
+.checkbtn{
+  display: none;
+}
+
+} 
+ @media only screen and (min-width: 768px) {
   *{ margin: 0;
     padding: 0;
   }
@@ -1040,13 +987,12 @@ h2{
   font-size: 15px;
   color:#fff;
 }
-.las{
-  display:none;
-  }
-  #check{
-
-  display:none;
-  }
+#check{
+  display: none;
+}
+.checkbtn{
+  display: none;
+}
 }
 @media only screen and (min-width: 992px) {
   *{ margin: 0;
@@ -1218,15 +1164,14 @@ h2{
   font-size: 15px;
   color:#fff;
 }
-.las{
-  display:none;
-  }
-  #check{
-
-  display:none;
-  }
+#check{
+  display: none;
 }
-
+.checkbtn{
+  display: none;
+}
+}
+ 
 
 
 @media only screen and (min-width: 1200px) {
@@ -1403,12 +1348,72 @@ h2{
   font-size: 15px;
   color:#fff;
 }
-.las{
-  display:none;
+#check{
+  display: none;
+}
+.checkbtn{
+  display: none;
+}
+}
+
+@media (min-width:1920px)
+{
+  *{
+      margin: 0;
+      padding: 0;
+    }
+    .thenav{
+      display: flex;
+      justify-content:center ;
+      align-items: right;
+      background: #fff;
+      position: sticky;
+      top: 0;
+  
+  }
+  .thenav img{
+    width: 100px;
+    margin-left: -430px;
+    margin-top: 5px;
+  }
+  .thenav ul{
+      display: flex;
+      list-style: none;
+      margin: 20px 0px;
+  }
+  .nav-links ul li{
+      font-family: Arial;
+      font-size: 18px;
+      position: relative;
+      right: -28%;
+  
+  }
+  .thenav h1{
+    color: #003782;
+    margin-top: 15px;
+    position: relative;
+    left: -15%;
+    font-size: 35px;
+  }
+  .nav-links ul li a{
+      text-decoration: none;
+      color: #003782;
+      padding: 8px 12px;
+      transition: all .5s ease;
+      font-size: 22px;
+  }
+  .nav-links ul li a:hover{
+      background-color: #003782;
+      border-radius: 3px;
+      color: #fff;
+  
   }
   #check{
-
-  display:none;
+    display: none;
   }
+  .checkbtn{
+    display: none;
+  }
+  
 }
 }

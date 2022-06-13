@@ -1,4 +1,3 @@
-
 .sidenav {
   width: 200px;
   background: #013b92;
@@ -14,25 +13,9 @@
   position: sticky;
   height: 17vh;
   top: 0;
-  z-index: 1;
-  background: #013b92;
 }
-a .active{
-  background: #ff0000;
-}
-.mat-list-item{
-  color: #fff;
-  font-size: 15px;
-  transition: 1s;
-}
-.mat-list-item:hover{
- color: #fff;
- background: #001a41;
- font-size: 15px;
- box-shadow: 0 0 7px #001a41,0 0 7px #001a41;
-}
-
 h1{
+
   margin: 50px;
 }
 span{
@@ -54,21 +37,19 @@ img{
   border-radius: 5px;
 }
 span .mat-icon{
-  font-size: 40px;
+  font-size: 55px;
   position: absolute;
-  right: 15%;
-  top: 25%;
+  right: 12%;
+  top: 21%;
 }
 .btn{
-  color: #000;
   font-size: 13px;
+  font-weight: 600;
   background: #fff;
   position: absolute;
-  right: 5%;
+  right: 3%;
   outline: none;
   border: none;
-  border-radius: 5px;
-  font-weight: bold;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;

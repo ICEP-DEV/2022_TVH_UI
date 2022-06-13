@@ -12,9 +12,9 @@ export class RulesComponent implements OnInit {
   showMe:boolean = true
 
   ngOnInit(): void {
-
   }
-  theMenu()
+
+    theMenu()
   {
     this.showMe=!this.showMe
   }

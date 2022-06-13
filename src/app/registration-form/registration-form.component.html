@@ -14,12 +14,7 @@
         <nav class="thenav" >
           <a href=""><img src="../assets/tut-logo.png"></a>
           <h1>Tshwane varsity hackathon 2022</h1>
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-           <i class="las la-bars"></i>
-         </label>
           <div class="nav-links">
-
             <ul >
               <li><a href="">Home</a></li>
               <li><a href="about">About</a></li>
@@ -28,81 +23,171 @@
               <li><a href="public-gallery">Gallery</a></li>
               <li><a href="rewards">Rewards</a></li>
               <li><a href="public-teams">Team</a></li>
-
+    
             </ul>
-
+    
           </div>
+          <!-- <i class="las la-bars" (click)="theMenu()"></i> -->
         </nav>
       </section>
-
+    
 
     <div class="container">
-    <form action="">
-      <div class="name-surname">
-        <input type="text" placeholder="Full Names">
-        <input type="text" placeholder="Surname">
-      </div>
-      <div class="theAge">
-        <input type="text" placeholder="Age">
+    <form  #regForm="ngForm" [formGroup]="registerForm"  (ngSubmit)="clickhandle() ">
+      
+        <input type="text" formControlName="names"  class="name" placeholder="Full Names" required [(ngModel)]="names" id="names" name="name" namesControl="ngModel">
+
+          <!---error message-->
+          <div *ngIf=" namess.invalid && (namess.touched || namess.dirty)"   >
+            <span class="alert" *ngIf="submitted && namess.errors?.required">*Full names are required</span>
+            <span class="alert" *ngIf="namess.errors?.pattern">*Enter only characters</span>
+
+         </div>
+
+
+        <input type="text" formControlName="surname" placeholder="Surname" required [(ngModel)]="surname" id="surname" name="string" namesControl="ngModel">
+
+                <!---error message-->
+                <div *ngIf="surnames.invalid && (surnames.touched || surnames.dirty)" >
+                  <span class="alert" *ngIf="submitted && surnames.errors?.required">*Surname is required</span>
+                  <span class="alert" *ngIf="surnames.errors?.pattern">*Enter only characters</span>
+
+               </div>
+
+
+              
+
+      <div class="theAge" >
+        <input type="text" formControlName="age" placeholder="Age" required [(ngModel)]="ages" id="ages" name="string" >
+
+                <!---error message-->
+                <div *ngIf="age.invalid && (age.touched || age.dirty)" >
+                  <span class="alert" *ngIf=" submitted && age.errors?.required">*Age number is required</span>
+                  <span class="alert" *ngIf="age.errors?.pattern">*Enter only numbers</span>
+
+               </div>
       </div>
       <br>
       <br>
-      <select class="the-gender">
-        <option value="choose">Gender</option>
+      <select formControlName="genders" class="the-gender"  [(ngModel)]="gender" id="gender" name="string">
+        <option [ngValue]="null"  selected disabled>Select gender</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
       </select>
+
+
+                        <!---error message-->
+                        <div *ngIf="genderss.invalid && (genderss.touched || genderss.dirty)" >
+                          <span class="alert" *ngIf="submitted && genderss.errors?.required">*Gender is required</span>
+                     </div>
+
       <br>
-      <input type="text" placeholder="Student Number">
+      <input type="text" formControlName="studentNumber"  placeholder="Student Number" required [(ngModel)]="student" id="stud" name="studentNumber" namesControl="ngModel">
+
+          <!---error message-->
+          <div *ngIf=" studentNumbers.invalid && (studentNumbers.touched || studentNumbers.dirty)"   >
+            <span class="alert" *ngIf="submitted && studentNumbers.errors?.required">*Student number is required</span>
+            <span class="alert" *ngIf="studentNumbers.errors?.pattern">*Enter only numbers</span>
+            <span class="alert" *ngIf="studentNumbers.errors?.maxlength">*Student number must be 9 digits</span>
+            <span class="alert" *ngIf="studentNumbers.errors?.minlength">*Student number must be 9 digits</span>
+
+         </div>
       <br>
-      <input type="text" placeholder="Email">
-      <input type="text" placeholder="Cell Number">
+      <input type="text" formControlName="email" placeholder="Student Email" required [(ngModel)]="stud_email" id="stud_email" name="string" email="true">
+
+
+                <!---error message-->
+                <div *ngIf="emails.invalid && (emails.touched || emails.dirty)" >
+                  <span class="alert" *ngIf=" submitted && emails.errors?.required">*emails is required</span>
+                  <span class="alert" *ngIf="emails.errors?.email">*Enter valid email address</span>
+
+               </div>
+      
+      <input type="text" formControlName="mobileNumber"  placeholder="Cell Number" required [(ngModel)]="mNumber" id="mNumber" name="string" >
+
+                <!---error message-->
+                <div *ngIf="mobilenumber.invalid && (mobilenumber.touched || mobilenumber.dirty)" >
+                  <span class="alert" *ngIf=" submitted && mobilenumber.errors?.required">*cellphone number is required</span>
+                  <span class="alert" *ngIf="mobilenumber.errors?.pattern">*Enter only numbers</span>
+                  <span class="alert" *ngIf="mobilenumber.errors?.maxlength">*Mobile number must be 10 digits</span>
+                  <span class="alert" *ngIf="mobilenumber.errors?.minlength">*Mobile number must be 10 digits</span>
+
+               </div>
+
       <br>
       <br>
       <br>
-      <select class="your-insti">
-        <option value="choose">Faculty</option>
-        <option value="tut"> Faculty Of Information And Communication Technology</option>
-        <option value="up">Faculty Of Management Sciences</option>
-        <option value="smu">Faculty Of Arts And Design</option>
+      <select class="your-insti"   formControlName="institutes"   name="institutes" required  [(ngModel)]="facult" id="institutes">
+        
+         
+        <!-- <option disabled value="instituion">Choose Option</option> -->
+        <option [ngValue]="null" selected disabled>Select faculty</option>
+        <option  *ngFor="let institutess of institutes" [value]="institutess.value">
+            {{institutess.viewValue}}</option>
     </select>
+
+
+                                            <!---error message-->
+                                            <div *ngIf=" submitted && institutess.invalid && (institutess.touched || institutess.dirty)" >
+                                              <span class="alert" *ngIf="institutess.errors?.required">*Faculty is required</span>
+                                         </div>
+    
     <br>
-    <input type="text" placeholder="Specialisation">
+    <input type="text" formControlName="special" placeholder="Specialisation" required [(ngModel)]="spec">
+
+          <!---error message-->
+          <div *ngIf=" specs.invalid && (specs.touched || specs.dirty)"   >
+            <span class="alert" *ngIf="submitted && specs.errors?.required">*Specialization is required</span>
+            <span class="alert" *ngIf="specs.errors?.pattern">*Enter only characters</span>
+
+         </div>
     <br>
     <br>
     <br>
-    <select class="your-insti">
-      <option value="choose">Level</option>
-      <option >First Year</option>
-      <option >Second Year</option>
-      <option >Final Year</option>
+    <select class="your-insti" formControlName="level"  [(ngModel)]="leve">
+      <option [ngValue]="null" selected disabled>Select level</option>
+      <option *ngFor="let levels of level" [value]="levels.value">
+          {{levels.viewValue}}</option>
   </select>
+
+  <div *ngIf=" submitted && lev.invalid && (lev.touched || lev.dirty)" >
+    <span class="alert" *ngIf="lev.errors?.required">*Level is required</span>
+    
+
+  </div>
   <br>
   <br>
   <br>
-  <select class="your-insti">
-    <option value="choose">Campus</option>
-    <option value="sos">Soshanguve Campus</option>
-    <option value="ema">Emalahleni Campus</option>
-    <option value="pre">Pretoria Campus</option>
-    <option value="art">Art Campus</option>
-    <option value="plk">Polokwane Campus</option>
+  <select class="your-insti" formControlName="campuses" name="institutes" required [(ngModel)]="campus"  id="institutes">
+    <option [ngValue]="null" selected disabled>Select campus</option>
+    <option  *ngFor="let camp of camps" [value]="camp.value">
+       {{camp.viewValue}}</option>
 </select>
+
+                                            <!---error message-->
+                                            <div *ngIf=" submitted && campusess.invalid && (campusess.touched || campusess.dirty)" >
+                                              <span class="alert" *ngIf="campusess.errors?.required">*Campus is required</span>
+                                         </div>
+
 <br>
 <br>
 <br>
-<select class="your-insti">
-  <option value="choose">Role</option>
-  <option >Analyst</option>
-  <option >Frontend Developer</option>
-  <option >Backend Developer</option>
-  <option >Graphic designer</option>
-  <option >Marketer</option>
+<select class="your-insti" formControlName="skill" name="skill" [(ngModel)]="skills" id="skill">
+ 
+  <option [ngValue]="null" selected disabled>Select role</option>
+  <option *ngFor="let skillss of skill" [value]="skillss.value">
+      {{skillss.viewValue}}</option>
 </select>
+
+<div *ngIf=" submitted && skil.invalid && (skil.touched || skil.dirty)" >
+  <span class="alert" *ngIf="skil.errors?.required">*Role is required</span>
+  
+
+</div>
+
 <br>
 <br>
- <button class="btn" type="submit">Submit</button>
- <!-- <p> (click) ="alertWithSuccess()"</p> -->
+ <button  class="btn" type="submit">Submit</button>
     </form>
 
     </div>
